@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/light_gray_1" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="10.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/social_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:layout_gravity="center_horizontal" android:id="@id/social_login" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/social_login" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/text_signup_title" />
+        </LinearLayout>
+        <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="6.0dip" android:text="@string/label_what_shall_we_call" />
+        <EditText android:id="@id/signup_firstname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/text_hint_first_name" android:maxLength="30" android:inputType="textPersonName" style="@style/FormInput" />
+        <EditText android:id="@id/signup_lastname" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/mothers_clubtm_number_text_field" android:maxLength="30" android:inputType="textPersonName" style="@style/FormInput" />
+        <EditText android:id="@id/signup_middlename" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/mcfun_club_text_field" android:maxLength="30" android:inputType="textPersonName" style="@style/FormInput" />
+        <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="6.0dip" android:text="@string/label_provide_following" />
+        <Spinner android:id="@id/signup_gender" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:id="@id/signup_birthdate" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/signup_birthdate" />
+        <EditText android:id="@id/signup_zipcode" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/text_hint_zipcode" android:maxLength="5" android:inputType="number" style="@style/FormInput" />
+        <EditText android:id="@id/signup_phone" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/text_hint_phone" android:inputType="phone" style="@style/FormInput" />
+        <TextView android:gravity="center" android:id="@id/signup_mail_as_user" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="6.0dip" android:text="@string/text_info_use_to_login" />
+        <EditText android:id="@id/signup_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/text_hint_email_address" android:inputType="textEmailAddress" style="@style/FormInput" />
+        <EditText android:id="@id/signup_email_confirm" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/text_hint_email_address_confirm" android:inputType="textEmailAddress" style="@style/FormInput" />
+        <LinearLayout android:orientation="vertical" android:id="@id/already_registered_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/error_account_already_exists" style="@style/SemanticError" />
+            <TextView android:id="@id/btn_reset_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/label_cant_sign_in" style="@style/SemanticError" />
+        </LinearLayout>
+        <TextView android:id="@id/mobile_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SemanticError" />
+        <TextView android:id="@id/email_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SemanticError" />
+        <EditText android:id="@id/signup_username" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/text_hint_user_name" android:inputType="text" style="@style/FormInput" />
+        <LinearLayout android:orientation="vertical" android:id="@id/container_choose_method" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="6.0dip" android:text="@string/text_sigin_with" />
+            <com.mcdonalds.app.customer.ChooseMethodView android:id="@id/choose_method" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+        </LinearLayout>
+        <TextView android:gravity="center" android:id="@id/password_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="2.0dip" android:text="@string/password_description" />
+        <EditText android:id="@id/signup_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:hint="@string/text_hint_password" android:inputType="textWebPassword" style="@style/FormInput" />
+        <EditText android:id="@id/signup_confirm_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/text_hint_confirm_password" android:inputType="textWebPassword" android:imeOptions="actionDone" style="@style/FormInput" />
+        <TextView android:id="@id/passwords_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SemanticError" />
+        <TextView android:id="@id/data_collection_terms" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="2.0dip" android:text="@string/data_collection_terms" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/termsAndConditions_toggle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip">
+            <CheckBox android:id="@id/registration_data_collection_terms_acceptance_checkbox" android:layout_width="wrap_content" android:layout_height="68.0dip" android:checked="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:id="@id/registration_data_collection_terms_acceptance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/registration_data_collection_terms_acceptance" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:textColor="@android:color/white" android:id="@id/signup_button_finish" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="8.0dip" android:text="@string/continue_button" style="@style/RedButton" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:layout_width="fill_parent" android:layout_height="32.0dip" android:text="@string/already_have_account" />
+        <Button android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textColor="@color/dark_gray_2" android:id="@id/has_account" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="42.0dip" android:text="@string/sign_in" />
+    </LinearLayout>
+</ScrollView>

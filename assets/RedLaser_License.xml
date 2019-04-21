@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>-NOTICE-</key>
+	<string>
+		THIS FILE IS DIGITALLY SIGNED. DO NOT MODIFY.
+		To update, login to the RedLaser developer portal using your username.
+	</string>
+	<key>Company Name</key>
+	<string>jeff.sliwa@us.mcd.com</string>
+	<key>User Name</key>
+	<string>jeff.sliwa@us.mcd.com</string>
+	
+	<key>iOS</key>
+	<dict>
+		<key>App Bundle IDs</key>
+		<array>
+			<string>com.rdisoftware.mobileau</string>
+			<string>com.rdisoftware.mobileus</string>
+			<string>au.com.mcd.mobileau</string>
+			<string>com.mcd.mobileau</string>
+			<string>com.mcd.mobileus</string>
+			<string>com.mcd.poc</string>
+			<string>com.mcd.ios.USMcDOrdering</string>
+			<string>com.mcd.maf.redlaserpoc</string>
+			<string>com.mcd.mobileus.wwc</string>
+			<string>com.rdisoftware.mobileuk</string>
+			<string>com.mcd.mobileuk</string>
+			<string>com.mcd.gmo.eqa.uk</string>
+			<string>com.mcdonalds.gma</string>
+			<string>com.mcd.maf.McMeeting</string>
+			<string>uk.com.mcd.mobile</string>
+			<string>com.mcd.mobilech</string>
+			<string>com.rdisoftware.mobilech</string>
+			<string>com.mcd.maf.MAFDemo</string>
+			<string>com.mcd.gmo.eqa.ch</string>
+			<string>com.mcd.mobile</string>
+			<string>ch.com.mcd.gmo</string>
+			<string>com.mcdonalds.orderingch</string>
+			<string>com.mcdonalds.gma.uk</string>
+		</array>
+	</dict>
+	<key>Android</key>
+	<dict>
+		<key>Root Class Names</key>
+		<array>
+			<string>com.mcd.poc</string>
+			<string>com.rdisoftware.mobileau</string>
+			<string>com.rdisoftware.mobileus</string>
+			<string>au.com.mcd.mobileau</string>
+			<string>com.mcd.mobileau</string>
+			<string>com.mcd.mobileus</string>
+			<string>com.maf.sampleapplication</string>
+			<string>us.com.mcdonalds.mcdordering</string>
+			<string>com.rdisoftware.mobileuk</string>
+			<string>com.mcd.mobileuk</string>
+			<string>com.mcd.gmo.eqa.uk</string>
+			<string>com.mcdonalds.app</string>
+			<string>uk.com.mcd.mobile</string>
+			<string>com.mcd.mobilech</string>
+			<string>com.rdisoftware.mobilech</string>
+			<string>com.mcd.gmo.eqa.ch</string>
+			<string>com.mcd.mobile</string>
+			<string>ch.com.mcd.gmo</string>
+			<string>com.mcdonalds.orderingch</string>
+			<string>com.mcd.maf.mcmeeting</string>
+			<string>com.mcdonalds.app.uk</string>
+		</array>
+	</dict>
+	
+</dict>
+</plist>
+-----BEGIN SIGNATURE-----
+Eodau+/SMluUsfHZIXxaO+pMte93chTeYW/tR96QgoUoHouOrd0V5szPB2QXS2BV
+QS4Zq00Qe+FT21gf4533qe+O/A2Q9mupaXV+GYRxvKxqNbTZ0N0gIsYi4zZAfm4I
+PC7ai3UPOD8uFvIzS7W0wI2SS7cyVLyPe5uY9XKzc2qLPYCEuRvhbd8DiGTCdXXD
+eXG2yJ6WGcnALftS3AKIVV7x846OZHiC5Tck99Kpls3+gadp5oeUV6IqMo7SfueQ
+iUhfOfk8dNw/h3b+C4CcKTHAZq/7mo1K27eDR554EPhl/r43dMqhAZMCIcwT73id
+YEmdXjP01K17HNYmAG7y9j+YWCfdOEy5JhnlS9AWwQihiXvMVOTPQAFq0Ehl6pvd
+3S7kxkr5sQu77Y42bJMSAsmpliJoR26o9nSlpQkvnqEEZ5Tk294u4YpBpe/qfl1y
+4V2hv26sd7VeJ1aG3qDxtoM9L/riE3ZW/02pnZBxEcYGOSKDFO5/qXXSWiANq8Ad
+i+XwyH7GRCpkty8QRxFKEC9FvOXO8gsK22yAio6JW2vSAufgMBxDa7SYsJ6o6LQz
+3rUOhBBa83Mj0DlyhA5yK95LoLFrMi7EPkNYGDnVA9AjgZw7oFdSfAJ3HGebrUa7
+KQxNqSvfbyz9O8dwRNvlPgK+UT/jnmzzSaaaMP8z9n8=
+-----END SIGNATURE-----

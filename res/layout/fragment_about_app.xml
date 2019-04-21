@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="16.0sp" android:gravity="center" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_about_app" />
+    <TextView android:textSize="14.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_app_version" />
+    <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/text_version" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/textview_copyright" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_copyright" />
+    <Button android:gravity="center|left" android:id="@id/button_eula" android:background="@drawable/listitem_white_light_gray_bg" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/end_user_license_agreement" android:drawableRight="@drawable/selector_arrow_gray" android:drawableEnd="@drawable/selector_arrow_gray" />
+    <View android:id="@id/ruler_eula" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <Button android:gravity="center|left" android:id="@id/button_tutorial" android:background="@drawable/listitem_white_light_gray_bg" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/appmenu_tutorial" android:drawableRight="@drawable/selector_arrow_gray" android:drawableEnd="@drawable/selector_arrow_gray" />
+    <View android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <Button android:gravity="center|left" android:id="@id/button_terms" android:background="@drawable/listitem_white_light_gray_bg" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/terms_and_conditions" android:drawableRight="@drawable/selector_arrow_gray" android:drawableEnd="@drawable/selector_arrow_gray" />
+    <View android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <Button android:gravity="center|left" android:id="@id/button_privacy" android:background="@drawable/listitem_white_light_gray_bg" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/privacy" android:drawableRight="@drawable/selector_arrow_gray" android:drawableEnd="@drawable/selector_arrow_gray" />
+    <View android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+    <Button android:gravity="center|left" android:id="@id/button_faq" android:background="@drawable/listitem_white_light_gray_bg" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faq" android:drawableRight="@drawable/selector_arrow_gray" android:drawableEnd="@drawable/selector_arrow_gray" />
+</LinearLayout>

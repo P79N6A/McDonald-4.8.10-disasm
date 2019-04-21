@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/AppTheme.TextAppearance.LargeBold" android:textColor="@color/dark_gray_1" android:gravity="center_horizontal" android:id="@id/table_service_info_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/table_service_zone_instruction" />
+    <RelativeLayout android:id="@id/table_service_touchable_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/table_service_image" android:layout_width="fill_parent" android:layout_height="300.0dip" android:src="@drawable/table_service_zone" />
+        <EditText android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="80.0sp" android:textColor="@color/dark_gray_1" android:gravity="center" android:id="@id/table_service_number" android:background="@android:color/transparent" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" android:cursorVisible="true" android:maxLength="2" android:layout_alignRight="@id/table_service_image" android:layout_centerVertical="true" android:inputType="number" android:imeOptions="actionDone" android:imeActionLabel="Done" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="20.0sp" android:textColor="@color/dark_gray_1" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/table_service_tap_above_enter_number" android:layout_below="@id/table_service_image" />
+    </RelativeLayout>
+    <Button android:layout_gravity="bottom" android:id="@id/table_service_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/button_finish_and_pay" style="@style/RedButtonLarge" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:filterTouchesWhenObscured="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:layout_gravity="end|bottom|center" android:id="@id/basket_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_marginEnd="16.0dip" layout="@layout/fragment_basket_badge" />
+</FrameLayout>

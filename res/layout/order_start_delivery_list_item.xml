@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/dark_gray_1" android:id="@id/title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/delivery_label_when" />
+    <TextView android:textColor="@color/dark_gray_2" android:gravity="end" android:id="@id/value_text_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="@string/label_as_soon_as_possible" android:maxLines="3" android:minLines="1" android:layout_weight="1.0" />
+    <ImageView android:id="@id/imageView" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_selector_arrow_ltgray" android:layout_alignParentLeft="false" android:layout_alignParentTop="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</LinearLayout>

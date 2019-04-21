@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/light_gray_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:text="@string/label_my_mobile_number" />
+        <EditText android:id="@id/mobile_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/text_hint_phone" android:maxLength="11" android:inputType="phone" style="@style/FormInput" />
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/warning_no_mobile_verified" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/error_not_yet_verified_mobile" android:drawableTop="@drawable/icon_warn" />
+        <Button android:enabled="false" android:id="@id/button_verify_mobile" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/label_button_verify_mobile" style="@style/RedButton" />
+        <Button android:enabled="false" android:textColor="@android:color/white" android:id="@id/save_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="5.0dip" android:text="@string/lite_btn_save_changes" style="@style/RedButton" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/sms_sended_view" android:background="#cc000000" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_validation_sms_sent" />
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/text_sms_in_10" />
+        </LinearLayout>
+        <Button android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textColor="@android:color/black" android:id="@id/ok_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ok" style="@style/GreyButtonLarge" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/llSearch" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/llRowKey" android:background="@drawable/form_row_layout" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0dip" android:textColor="#ffbbbbbb" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/lbKeyword" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="送餐地址" android:layout_weight="3.0" />
+                <ImageButton android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/btnSearch" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ico_r_arrow" android:scaleType="fitCenter" android:layout_weight="0.0" />
+                <ImageButton android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/btnClear" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ico_delete" android:scaleType="fitCenter" android:layout_weight="0.0" />
+            </LinearLayout>
+            <EditText android:textSize="16.0dip" android:textColor="#ff555555" android:layout_gravity="center_vertical" android:id="@id/txtEAKeyword" android:background="@android:color/transparent" android:paddingBottom="10.0dip" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="请输入地址" android:inputType="textMultiLine" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/llAddrWarn" android:background="#ffff0000" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/lbAddrWarn" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="" />
+        </LinearLayout>
+        <WebView android:id="@id/webView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ScrollView android:id="@id/llRowMiscScroll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/llRowMisc" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/llRowNotice" android:background="@drawable/form_row_layout" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="#ffbbbbbb" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/lbAddrNotice" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="120.0dip" android:layout_height="50.0dip" android:text="REMARKS" android:layout_weight="0.0" />
+                    <TextView android:textSize="14.0dip" android:textColor="#ff555555" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/txtAddrNotice" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/llRowFloor" android:background="@drawable/form_row_layout" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="#ffbbbbbb" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/lbAddrFloor" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="120.0dip" android:layout_height="50.0dip" android:text="FLOOR" android:layout_weight="0.0" />
+                    <EditText android:textSize="14.0dip" android:textColor="#ff555555" android:layout_gravity="center_vertical" android:id="@id/txtAddrFloor" android:background="@android:color/transparent" android:longClickable="false" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/llRowFlat" android:background="@drawable/form_row_layout" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="#ffbbbbbb" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/lbAddrFlat" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="120.0dip" android:layout_height="50.0dip" android:text="FLAT" android:layout_weight="0.0" />
+                    <EditText android:textSize="14.0dip" android:textColor="#ff555555" android:layout_gravity="center_vertical" android:id="@id/txtAddrFlat" android:background="@android:color/transparent" android:longClickable="false" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/llRowRemarks" android:background="@drawable/form_row_layout" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0dip" android:textColor="#ffbbbbbb" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/lbAddrRemarks" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="120.0dip" android:layout_height="50.0dip" android:text="REMARKS" android:layout_weight="0.0" />
+                    <EditText android:textSize="14.0dip" android:textColor="#ff555555" android:layout_gravity="center_vertical" android:id="@id/txtAddrRemarks" android:background="@android:color/transparent" android:longClickable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" android:inputType="textMultiLine" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <TextView android:textSize="14.0dip" android:textColor="#ffcccccc" android:id="@id/lbLoading" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Loading..." />
+        <ListView android:id="@id/listResult" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageButton android:id="@id/btnGPS" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ico_gps" android:scaleType="fitCenter" />
+</LinearLayout>

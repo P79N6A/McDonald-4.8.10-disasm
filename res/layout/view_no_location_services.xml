@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffb1b1b1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textAppearance="@style/AppTheme.TextAppearance.LargeBold" android:textColor="@android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:text="@string/label_no_location_services" android:drawableTop="@drawable/icon_alert_black" android:drawablePadding="5.0dip" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ff7f8188" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/label_turn_on_location" />
+</LinearLayout>

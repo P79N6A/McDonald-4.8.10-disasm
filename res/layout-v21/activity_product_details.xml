@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:filterTouchesWhenObscured="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CoordinatorLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.design.widget.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.design.widget.CollapsingToolbarLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="64.0dip" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:contentScrim="@android:color/white">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="64.0dip" app:layout_collapseMode="parallax">
+                    <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="@dimen/product_detail_image_height" android:transitionName="image" app:layout_collapseMode="parallax" />
+                    <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/time_restriction_warning" android:background="@android:color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+                    <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/menu_ending_text" android:background="@color/mcd_light_grey" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <android.support.v7.widget.Toolbar android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="64.0dip" app:layout_collapseMode="pin" />
+                <RelativeLayout android:layout_gravity="bottom" android:background="@android:color/white" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_weight="2.0">
+                    <android.support.design.widget.TabLayout android:id="@id/dimension_tabs" android:layout_width="fill_parent" android:layout_height="fill_parent" app:tabIndicatorHeight="0.0dip" app:tabBackground="@drawable/menu_filter_left_button_bg" app:tabTextAppearance="@style/AppTheme.OrderingTabsTextAppearance" />
+                </RelativeLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.widget.NestedScrollView android:padding="8.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/dimension_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+                <include layout="@layout/product_quantity_controls" />
+                <LinearLayout android:orientation="vertical" android:id="@id/favorites_disclaimer_container" android:paddingBottom="70.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                    <RelativeLayout android:background="@drawable/button_light_gray" android:paddingLeft="20.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <Button android:textColor="@android:color/white" android:id="@id/add_item_to_favorites" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/add_item_to_favorites" android:drawableLeft="@drawable/icon_favorites" android:drawablePadding="-20.0dip" style="@style/TransparentButton" />
+                    </RelativeLayout>
+                    <com.mcdonalds.app.ordering.ProductRelatedOffersView android:id="@id/related_offers" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/warnings_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:background="@drawable/simple_shadow" android:layout_width="fill_parent" android:layout_height="9.0dip" />
+            <FrameLayout android:background="@color/xlight_gray_background" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="63.0dip">
+                <Button android:id="@id/add_to_basket_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/label_add_to_basket" style="@style/RedButton" />
+            </FrameLayout>
+        </LinearLayout>
+        <include app:layout_behavior="@string/appbar_scrolling_view_behavior" app:behavior_overlapTop="64.0dip" layout="@layout/favorite_name_layout" />
+        <include android:layout_gravity="end|bottom|center" android:id="@id/basket_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_marginEnd="16.0dip" layout="@layout/fragment_basket_badge" />
+    </android.support.design.widget.CoordinatorLayout>
+    <fragment android:name="com.mcdonalds.app.ui.NavigationDrawerFragment" android:layout_gravity="right" android:id="@id/navigation_drawer" android:layout_width="@dimen/navigation_drawer_width" android:layout_height="fill_parent" />
+</android.support.v4.widget.DrawerLayout>

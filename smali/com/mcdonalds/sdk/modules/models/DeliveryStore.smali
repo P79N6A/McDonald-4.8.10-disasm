@@ -1,0 +1,20 @@
+.class public Lcom/mcdonalds/sdk/modules/models/DeliveryStore;
+.super Lcom/mcdonalds/sdk/modules/storelocator/Store;
+.source "DeliveryStore.java"
+
+
+# annotations
+.annotation runtime Ljava/lang/Deprecated;
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 9
+    invoke-direct {p0}, Lcom/mcdonalds/sdk/modules/storelocator/Store;-><init>()V
+
+    return-void
+.end method

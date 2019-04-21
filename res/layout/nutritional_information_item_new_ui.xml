@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textColor="@color/dark_gray_2" android:gravity="right" android:id="@id/nutritional_information_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_weight="70.0" style="@style/NutritionInformation" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="30.0">
+        <TextView android:textStyle="normal" android:textColor="@color/mcd_red" android:gravity="left" android:id="@id/nutritional_information_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/NutritionInformation" />
+        <TextView android:textStyle="normal" android:textColor="@color/com_facebook_likeboxcountview_border_color" android:gravity="left" android:id="@id/nutritional_information_dailyValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" style="@style/NutritionInformation" />
+    </LinearLayout>
+</LinearLayout>

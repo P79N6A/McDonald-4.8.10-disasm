@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/light_gray_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/content_container" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="20.0dip" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="22.0sp" android:textColor="@color/dark_gray_1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/items_no_longer_available" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="20.0dip" android:layout_weight="1.0">
+                <android.support.v7.widget.RecyclerView android:id="@id/item_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <Button android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:id="@id/button_negative" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/button_review_order" style="@style/GreyButtonLarge" />
+        <Button android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:id="@id/button_positive" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/continue_checkin" style="@style/RedButton" />
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/login_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

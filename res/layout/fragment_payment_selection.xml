@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/top_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/save_button" android:layout_alignParentTop="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/menu_dark_gray_2" android:gravity="center" android:id="@id/curbside_explanation" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="20.0dip" android:text="@string/curbside_explanation" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/mcd_red" android:gravity="center" android:id="@id/one_click_cc_add_textView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="20.0dip" android:text="@string/one_click_cc_add" />
+        <se.emilsjolander.stickylistheaders.StickyListHeadersListView android:id="@id/listView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" />
+    </LinearLayout>
+    <Button android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:layout_gravity="bottom" android:id="@id/save_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:text="@string/save" android:layout_alignParentBottom="true" style="@style/RedButton" />
+</RelativeLayout>

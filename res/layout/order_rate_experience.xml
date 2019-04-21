@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="18.0sp" android:textColor="@color/dark_gray_1" android:id="@id/rate_experience_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_rate_your_experience" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <Button android:textColor="@android:color/white" android:id="@id/skip_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="79.0dip" android:minHeight="27.0dip" android:text="@string/order_skip_button" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/GreyButton" />
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/dashed_line_horiz" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/rating_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip">
+        <Space android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/rating_star_1" android:tag="1" android:src="@drawable/icon_star_outline" style="@style/DefaultRatingStar" />
+        <Space android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/rating_star_2" android:tag="2" android:src="@drawable/icon_star_outline" style="@style/DefaultRatingStar" />
+        <Space android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/rating_star_3" android:tag="3" android:src="@drawable/icon_star_outline" style="@style/DefaultRatingStar" />
+        <Space android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/rating_star_4" android:tag="4" android:src="@drawable/icon_star_outline" style="@style/DefaultRatingStar" />
+        <Space android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/rating_star_5" android:tag="5" android:src="@drawable/icon_star_outline" style="@style/DefaultRatingStar" />
+        <Space android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/comment_holder" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="18.0sp" android:textColor="@color/dark_gray_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_comment" />
+        <EditText android:id="@id/comment_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="2" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/dashed_line_horiz" />
+    <Button android:id="@id/send_rating_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/label_send_rating" style="@style/RedButton" />
+</LinearLayout>

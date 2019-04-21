@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/xlight_gray_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/light_gray_1" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <RelativeLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/filters_view" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:src="@drawable/icon_filters_gray" android:layout_centerVertical="true" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/dark_gray_1" android:layout_gravity="center_vertical" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/label_filters" android:layout_toRightOf="@id/imageView" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:src="@drawable/selector_arrow_gray" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/red_filters_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/icon_check_red" android:layout_toLeftOf="@id/imageView2" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ListView android:id="@id/list" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" />
+</LinearLayout>

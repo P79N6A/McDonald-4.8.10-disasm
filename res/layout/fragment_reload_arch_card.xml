@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/xlight_gray_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/amount_chooser_layout_container" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="300.0dip" android:layout_alignParentTop="true">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/amount_chooser_layout" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.mcdonalds.app.widget.ToggleButtonGroupTableLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/amount_grid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                    <TableRow>
+                        <RadioButton android:text="@string/ten_dolars" style="@style/CustomArchCardAmountButton" />
+                        <RadioButton android:text="@string/twenty_dolars" style="@style/CustomArchCardAmountButton" />
+                    </TableRow>
+                    <TableRow>
+                        <RadioButton android:text="@string/thirty_dolars" style="@style/CustomArchCardAmountButton" />
+                        <RadioButton android:text="@string/forthy_dolars" style="@style/CustomArchCardAmountButton" />
+                    </TableRow>
+                </com.mcdonalds.app.widget.ToggleButtonGroupTableLayout>
+                <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:layout_gravity="center|top" android:id="@id/screen_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/choose_your_amount" />
+            </FrameLayout>
+        </ScrollView>
+        <View android:id="@id/overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/custom_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="300.0dip">
+        <TextView android:textColor="@color/light_gray_2" android:gravity="center" android:id="@id/custom_amount_prompt" android:paddingLeft="64.0dip" android:paddingRight="64.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="@string/or_enter_custom_amount" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <com.mcdonalds.app.widget.KeyboardListenerEditText android:id="@id/custom_amount_input" android:background="@android:color/white" android:padding="8.0dip" android:layout_width="180.0dip" android:layout_height="58.0dip" android:hint="$" android:layout_below="@id/custom_amount_prompt" android:layout_centerHorizontal="true" android:inputType="number" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/light_gray_2" android:gravity="center" android:id="@id/reload_disclaimer" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="Card balance cannot exceed $110. Once this limit is met, no further funds can be transferred until card balance decreases" android:layout_below="@id/custom_amount_input" android:layout_centerHorizontal="true" />
+        <LinearLayout android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:divider="@drawable/transparent" android:layout_alignParentBottom="true">
+            <Button android:id="@id/one_time_button" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginRight="4.0dip" android:text="@string/one_time_button_text" android:layout_weight="0.5" style="@style/DarkGrayButton" />
+            <Button android:id="@id/recurring_button" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginLeft="4.0dip" android:text="@string/recurring_button_text" android:layout_weight="0.5" style="@style/DarkGrayButton" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

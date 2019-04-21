@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="numberOfDays">
+        <item quantity="other">%d days</item>
+        <item quantity="one">%d day</item>
+    </plurals>
+    <plurals name="numberOfHours">
+        <item quantity="other">%d hours</item>
+        <item quantity="one">%d hour</item>
+    </plurals>
+    <plurals name="numberOfMinutes">
+        <item quantity="other">%d minutes</item>
+        <item quantity="one">%d minute</item>
+    </plurals>
+</resources>

@@ -1,0 +1,6 @@
+.class public interface abstract Lcom/google/api/client/repackaged/org/apache/commons/codec/BinaryEncoder;
+.super Ljava/lang/Object;
+.source "BinaryEncoder.java"
+
+# interfaces
+.implements Lcom/google/api/client/repackaged/org/apache/commons/codec/Encoder;

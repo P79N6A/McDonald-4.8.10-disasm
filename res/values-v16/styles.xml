@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyEditText" parent="@android:style/Widget.EditText">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="MyTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+</resources>

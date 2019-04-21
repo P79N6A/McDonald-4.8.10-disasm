@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="32.0dip" android:paddingTop="32.0dip" android:paddingRight="32.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="32.0dip" android:paddingEnd="32.0dip">
+        <TextView android:textSize="18.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/checkout_placing_order_at" />
+        <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="18.0sp" android:gravity="center" android:id="@id/store_name" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="32.0dip" android:layout_marginRight="32.0dip" android:layout_marginBottom="32.0dip" android:text="@string/text_where_picking_up" />
+    <Button android:id="@id/lobby_button" android:text="@string/label_lobby" style="@style/PickupButtonStyle" />
+    <Button android:id="@id/kiosk_button" android:text="@string/label_kiosk" style="@style/PickupButtonStyle" />
+    <Button android:id="@id/drive_thru_button" android:text="@string/label_drive_thru" style="@style/PickupButtonStyle" />
+    <Button android:id="@id/curbside_button" android:text="@string/label_curbside" style="@style/PickupButtonStyle" />
+</LinearLayout>

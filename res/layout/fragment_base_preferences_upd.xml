@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/xlight_gray_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/light_gray_2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="25.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/master_toggle" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@color/light_gray_2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="0.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/list_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/instructions_layout" android:background="@color/xlight_gray_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/dark_gray_2" android:id="@id/instructions_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/like_to_receive_offers_for" />
+        </RelativeLayout>
+        <View android:background="@color/light_gray_2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <ListView android:id="@id/listview1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/light_gray_2" android:dividerHeight="4.0px" />
+        <View android:background="@color/light_gray_2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

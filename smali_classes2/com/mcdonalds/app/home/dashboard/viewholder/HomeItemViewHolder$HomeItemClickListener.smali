@@ -1,0 +1,19 @@
+.class public interface abstract Lcom/mcdonalds/app/home/dashboard/viewholder/HomeItemViewHolder$HomeItemClickListener;
+.super Ljava/lang/Object;
+.source "HomeItemViewHolder.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/mcdonalds/app/home/dashboard/viewholder/HomeItemViewHolder;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "HomeItemClickListener"
+.end annotation
+
+
+# virtual methods
+.method public abstract onHomeItemClick(I)V
+.end method

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_search" />
+    <AutoCompleteTextView android:layout_gravity="center_vertical" android:id="@id/input" android:background="@android:color/transparent" android:paddingLeft="40.0dip" android:paddingRight="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/please_enter_a_district" android:maxLines="1" android:lines="1" android:inputType="text" android:imeOptions="actionSearch" />
+    <ImageView android:layout_gravity="end" android:id="@id/clear" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@android:drawable/ic_menu_close_clear_cancel" android:contentDescription="@string/clear" android:layout_marginEnd="5.0dip" />
+</FrameLayout>

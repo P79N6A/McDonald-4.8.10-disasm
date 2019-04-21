@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mcdonalds.app.ui.dateTime.CustomViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <View android:id="@id/buttonHorizontalDivider" android:background="@color/dark_gray_1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/cancelButton" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@android:string/cancel" android:layout_weight="1.0" style="?android:attr/borderlessButtonStyle" />
+        <View android:id="@id/buttonVerticalDivider" android:background="@color/dark_gray_1" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <Button android:id="@id/okButton" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@android:string/ok" android:layout_weight="1.0" style="?android:attr/borderlessButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

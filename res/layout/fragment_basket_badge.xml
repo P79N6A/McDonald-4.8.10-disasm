@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/basket_button_container" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/basket_badge_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_bag_btn_1" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffffc425" android:gravity="center" android:layout_gravity="end" android:id="@id/basket_badge_label" android:background="@drawable/bg_basket_indicator" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="13.0dip" android:singleLine="true" android:paddingStart="2.0dip" android:paddingEnd="2.0dip" android:layout_marginEnd="13.0dip" />
+</FrameLayout>

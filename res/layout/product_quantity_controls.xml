@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/quantity_total_container" android:tag="layout/product_quantity_controls_0" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="18.0sp" android:ellipsize="marquee" android:layout_width="200.0dip" android:layout_height="wrap_content" android:text="@string/quantity" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <Button android:textColor="@color/product_detail_quantity_color_selector" android:id="@id/increase_quantity" android:tag="binding_1" android:background="@null" android:layout_width="28.0dip" android:layout_height="28.0dip" android:text="@string/plus_sign" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/quantity_value" android:tag="binding_2" android:layout_width="64.0dip" android:layout_height="31.0dip" android:layout_toLeftOf="@id/increase_quantity" android:layout_centerVertical="true" android:layout_toStartOf="@id/increase_quantity" />
+        <Button android:textColor="@color/product_detail_quantity_color_selector" android:id="@id/decrease_quantity" android:tag="binding_3" android:background="@null" android:layout_width="28.0dip" android:layout_height="28.0dip" android:text="@string/minus_sign" android:layout_toLeftOf="@id/quantity_value" android:layout_centerVertical="true" android:layout_toStartOf="@id/quantity_value" />
+    </RelativeLayout>
+    <View android:background="@color/light_gray_2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+    <include layout="@layout/total_calorie_price" />
+</LinearLayout>

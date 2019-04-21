@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:gravity="center" android:background="#ffcccccc" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/label_item_offers" android:drawableLeft="@drawable/ic_offer" />
+    <LinearLayout android:orientation="vertical" android:id="@id/offers_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.mcdonalds.app.offers.OfferItemView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <com.mcdonalds.app.offers.OfferItemView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

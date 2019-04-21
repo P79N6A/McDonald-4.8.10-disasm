@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:filterTouchesWhenObscured="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.GridLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:text="@string/hint_security_card_front" app:layout_gravity="center_horizontal" />
+        <TextView android:text="@string/hint_security_card_back" app:layout_gravity="center_horizontal" />
+        <ImageView android:layout_marginTop="8.0dip" android:src="@drawable/card_hint_front" app:layout_row="1" app:layout_column="0" app:layout_columnWeight="1.0" app:layout_gravity="center_horizontal" />
+        <ImageView android:layout_marginTop="8.0dip" android:src="@drawable/card_hint_back" app:layout_row="1" app:layout_column="1" app:layout_columnWeight="1.0" app:layout_gravity="center_horizontal" />
+        <TextView android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:text="@string/hint_security_card_text" app:layout_row="2" app:layout_column="0" app:layout_columnSpan="2" app:layout_gravity="center_horizontal" />
+    </android.support.v7.widget.GridLayout>
+</RelativeLayout>

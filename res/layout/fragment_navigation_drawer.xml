@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ff1a1a1a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="42.0dip">
+        <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="18.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/welcome_message" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="42.0dip" android:singleLine="true" android:layout_toLeftOf="@id/tv_china_language" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/tv_china_language" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:minHeight="42.0dip" android:text="中文" android:layout_toLeftOf="@id/view_line" />
+        <View android:id="@id/view_line" android:background="@android:color/white" android:layout_width="1.0dip" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/tv_eng_language" android:layout_centerInParent="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/dark_gray_2" android:gravity="center_vertical" android:id="@id/tv_eng_language" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="15.0dip" android:text="ENG" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/navigation_list" android:background="@color/menu_dark_gray_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/menu_dark_gray_1" android:divider="#ff1a1a1a" android:dividerHeight="1.0dip" android:choiceMode="singleChoice" />
+</LinearLayout>

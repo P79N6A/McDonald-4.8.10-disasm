@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/need_an_account" />
+    <TextView android:textAppearance="@style/AppTheme.TextAppearance.MediumBold" android:textColor="@color/dark_gray_2" android:gravity="center" android:id="@id/need_an_account" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="42.0dip" android:text="@string/register_signin_button" />
+</merge>

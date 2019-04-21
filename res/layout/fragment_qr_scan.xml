@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/camera_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center" android:id="@id/qr_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:src="@drawable/qr_square" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+</FrameLayout>

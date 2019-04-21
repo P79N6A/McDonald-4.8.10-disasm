@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="card_types">
+        <item>Credit</item>
+        <item>Debit</item>
+    </string-array>
+    <string-array name="default_user">
+        <item>Please select one</item>
+        <item>@string/text_hint_email_address</item>
+        <item>@string/text_hint_phone</item>
+    </string-array>
+    <string-array name="lbEACityArray">
+        <item>请选择</item>
+    </string-array>
+    <string-array name="lbEACityArrayEn">
+        <item>Please Select</item>
+    </string-array>
+    <string-array name="signup_genders">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+</resources>

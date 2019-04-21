@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:filterTouchesWhenObscured="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/menu_header" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.mcdonalds.app.ui.NonSwipeableViewPager android:id="@id/fragment_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <include android:layout_gravity="end|bottom|center" android:id="@id/basket_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_marginEnd="16.0dip" layout="@layout/fragment_basket_badge" />
+    </android.support.design.widget.CoordinatorLayout>
+    <fragment android:name="com.mcdonalds.app.ui.NavigationDrawerFragment" android:layout_gravity="right" android:id="@id/navigation_drawer" android:layout_width="@dimen/navigation_drawer_width" android:layout_height="fill_parent" />
+</android.support.v4.widget.DrawerLayout>

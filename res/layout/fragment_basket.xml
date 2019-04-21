@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/basket_footer_include">
+        <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/menu_ending_text" android:background="@color/mcd_light_grey" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ListView android:id="@id/basket_list" android:padding="8.0dip" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <include android:id="@id/basket_footer_include" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="false" android:layout_alignParentTop="false" android:layout_alignParentBottom="true" layout="@layout/basket_footer" />
+    <include android:id="@id/basket_sign_in" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/basket_sign_in_view" />
+</RelativeLayout>

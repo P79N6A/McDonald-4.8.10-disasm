@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/add_new_card" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/left_buffer" android:background="@color/light_gray_1" android:layout_width="8.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+    <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="16.0sp" android:textColor="@color/menu_dark_gray_2" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/add_new_card_button" android:layout_toRightOf="@id/left_buffer" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/selector_arrow_gray" android:layout_toLeftOf="@id/right_buffer" android:layout_centerVertical="true" />
+    <View android:id="@id/right_buffer" android:background="@color/light_gray_1" android:layout_width="8.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+</RelativeLayout>

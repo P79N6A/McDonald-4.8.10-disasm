@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/order_container" android:background="@android:color/white" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="300.0dip" android:layout_marginLeft="@dimen/coupon_lef_right_margin" android:layout_marginRight="@dimen/coupon_lef_right_margin" android:layout_marginStart="@dimen/coupon_lef_right_margin" android:layout_marginEnd="@dimen/coupon_lef_right_margin" />
+    <View android:orientation="vertical" android:id="@id/zigzag_view" android:background="@drawable/zigzag" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginLeft="@dimen/coupon_lef_right_margin" android:layout_marginTop="0.0dip" android:layout_marginRight="@dimen/coupon_lef_right_margin" android:layout_marginStart="@dimen/coupon_lef_right_margin" android:layout_marginEnd="@dimen/coupon_lef_right_margin" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/warnings_container" layout="@layout/price_and_calories_warning_view" />
+        <Button android:textAppearance="?android:textAppearanceMedium" android:id="@id/order_again_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/order_again" style="@style/RedButton" />
+    </LinearLayout>
+</LinearLayout>

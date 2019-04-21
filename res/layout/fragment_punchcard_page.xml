@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/table" android:background="@color/xlight_gray_background" android:layout_width="fill_parent" android:layout_height="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center_horizontal" android:id="@id/punchcard_name" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/top_row" android:layout_width="fill_parent" android:layout_height="75.0dip" android:weightSum="5.0" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bottom_row" android:layout_width="fill_parent" android:layout_height="75.0dip" android:weightSum="5.0" />
+</LinearLayout>

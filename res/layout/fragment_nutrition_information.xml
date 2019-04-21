@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/nutritional_scrollview" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@android:color/white" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <ImageView android:id="@id/image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@id/nutritional_information_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/image">
+            <TextView android:id="@id/nutrition_information_header" android:text="@string/nutrition_information" android:layout_alignParentTop="true" style="@style/HeaderStyle" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/nutrition_information_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_below="@id/nutrition_information_header" android:animateLayoutChanges="true">
+                <LinearLayout android:orientation="vertical" android:id="@id/nutrition_highlight_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="6.0" android:animateLayoutChanges="true" />
+                <View android:background="@color/medium_gray_1" android:layout_width="1.0px" android:layout_height="fill_parent" />
+                <LinearLayout android:orientation="vertical" android:id="@id/nutrition_details_list" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="11.0" android:animateLayoutChanges="true" />
+            </LinearLayout>
+            <TextView android:id="@id/ingredients_header" android:layout_marginTop="12.0dip" android:text="@string/ingredients" android:layout_below="@id/nutrition_information_layout" style="@style/HeaderStyle" />
+            <LinearLayout android:orientation="vertical" android:id="@id/components_list_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ingredients_header" android:animateLayoutChanges="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/important_note_list_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/components_list_layout" android:animateLayoutChanges="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

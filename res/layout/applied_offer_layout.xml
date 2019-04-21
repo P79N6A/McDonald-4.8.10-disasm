@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginBottom="48.0dip" android:layout_weight="1.0" layout="@layout/offer_grid_item" />
+    <com.mcdonalds.app.widget.SquareRelativeLayout android:background="@color/light_gray_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginBottom="96.0dip" android:layout_weight="1.0">
+        <TextView android:gravity="center" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/one_offer_in_basket_message" android:layout_centerInParent="true" />
+        <Button android:id="@id/remove_from_basket_button" android:background="@color/xlight_gray_background" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_margin="4.0dip" android:text="@string/remove_from_basket" android:layout_alignParentBottom="true" />
+    </com.mcdonalds.app.widget.SquareRelativeLayout>
+</LinearLayout>

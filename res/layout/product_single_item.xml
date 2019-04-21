@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcdonalds.app.widget.CheckableRelativeLayout android:id="@id/product_details_item" android:background="@android:color/white" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mcdonalds.app.widget.InertCheckBox android:id="@id/product_check_box" android:background="@drawable/check_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="18.0sp" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/cash" android:maxLines="1" android:layout_toRightOf="@id/product_check_box" android:layout_alignTop="@id/food_image_small" android:layout_centerVertical="true" />
+</com.mcdonalds.app.widget.CheckableRelativeLayout>

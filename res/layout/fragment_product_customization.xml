@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/comes_with_header" android:text="@string/comes_with" style="@style/HeaderStyle" />
+            <LinearLayout android:orientation="vertical" android:id="@id/customizations_ingredients_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:id="@id/textView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/additional_condiments" style="@style/HeaderStyle" />
+            <LinearLayout android:orientation="vertical" android:id="@id/customizations_extras_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

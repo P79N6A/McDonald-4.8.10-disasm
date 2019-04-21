@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="14.0sp" android:gravity="end" android:id="@id/nutrient_name" android:background="@color/light_gray_2" android:padding="8.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:layout_marginStart="1.0dip" style="@style/TableRowTextView" />
+    <TextView android:gravity="center" android:id="@id/nutrient_product" android:background="@color/light_gray_1" android:padding="8.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:layout_marginStart="1.0dip" style="@style/TableRowTextView" />
+    <TextView android:gravity="center" android:id="@id/nutrient_100g" android:background="@color/light_gray_1" android:padding="8.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:layout_marginStart="1.0dip" style="@style/TableRowTextView" />
+    <TextView android:gravity="center" android:id="@id/nutrient_ri" android:background="@color/light_gray_1" android:padding="8.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="1.0dip" android:layout_marginStart="1.0dip" style="@style/TableRowTextView" />
+</TableRow>

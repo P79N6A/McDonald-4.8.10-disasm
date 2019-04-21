@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/main_view" android:background="@color/xlight_gray_background" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/AppTheme.TextAppearance.LargeBold" android:textColor="@color/dark_gray_1" android:gravity="center_horizontal" android:id="@id/textView2" android:layout_width="230.0dip" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/order_location_title" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="20.0sp" android:textColor="@color/dark_gray_1" android:gravity="center_horizontal" android:id="@id/textView" android:layout_width="230.0dip" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/order_location_message" />
+    <Button android:id="@id/table_service_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/button_table_service" style="@style/RedButtonLarge" />
+    <Button android:id="@id/eatin_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/button_eat_in" style="@style/RedButtonLarge" />
+    <Button android:id="@id/takeout_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/button_take_out" style="@style/GreyButtonLarge" />
+</LinearLayout>

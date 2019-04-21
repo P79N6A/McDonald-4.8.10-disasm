@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/storelocator_pager_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/non_header_content" android:padding="8.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="70.0dip">
+        <ImageView android:id="@id/icon_offers" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:src="@drawable/offer_pin_yellow_outline" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/AppTheme.TextAppearance.MediumBold" android:textColor="@color/dark_gray_1" android:ellipsize="end" android:id="@id/label_store_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:ellipsize="end" android:id="@id/label_store_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/eat_here_frame" android:longClickable="false" android:layout_width="120.0dip" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/button_eat_here" android:padding="10.0dip" android:visibility="visible" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="@string/button_select" style="@style/GreyButton" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/container_my_mcdonalds" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center|top" android:id="@id/icon_my_mcdonalds" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/icon_map_pin_small_red_yellow" android:scaleType="fitCenter" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/dark_gray_1" android:layout_gravity="center_horizontal" android:id="@id/label_my_mcdonalds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/label_my_mcd" android:singleLine="true" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/image_dashed_line" android:clickable="false" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/dashed_line_1040" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="10.0dip">
+        <ImageView android:id="@id/info_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_info_88" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_weight="1.0">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/dark_gray_1" android:id="@id/label_store_hours" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="italic" android:textColor="@color/medium_gray_1" android:id="@id/label_store_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/container_not_participating" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="10.0sp" android:layout_gravity="center_vertical" android:id="@id/label_not_participating" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/mobile_ordering_not_supported" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/icon_not_participating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_alert_black" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

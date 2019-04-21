@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="220.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/linear_layout_header" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.mcdonalds.app.widget.HeaderViewPager android:id="@id/header_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/pager_indicator" android:layout_centerInParent="true" />
+        <include layout="@layout/pager_indicator_group" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcdonalds.app.widget.CheckableRelativeLayout android:id="@id/product_details_item" android:tag="layout/bound_product_details_item_0" android:background="@android:color/white" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mcdonalds.app.widget.CheckableLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.mcdonalds.app.widget.InertCheckBox android:id="@id/product_check_box" android:tag="binding_1" android:background="@drawable/check_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+        <ImageView android:id="@id/food_image_small" android:tag="binding_2" android:background="@android:color/white" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+        <LinearLayout android:gravity="center|left" android:orientation="vertical" android:id="@id/ll_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <me.grantland.widget.AutofitTextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="13.0sp" android:textColor="@color/menu_item_enabled_selector" android:ellipsize="end" android:id="@id/name" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/mcd_red" android:id="@id/price_uplift" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/medium_gray_1" android:ellipsize="end" android:id="@id/name_details" android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textSize="14.0sp" android:id="@id/custom_special_instructions" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/button_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/info_button" android:tag="binding_7" android:background="@android:color/white" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/info_button" android:adjustViewBounds="true" />
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/hat_button" android:tag="binding_8" android:background="@android:color/white" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="8.0dip" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/disclosure_arrow" android:tag="binding_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_selector_arrow_ltgray" />
+        </LinearLayout>
+    </com.mcdonalds.app.widget.CheckableLinearLayout>
+</com.mcdonalds.app.widget.CheckableRelativeLayout>

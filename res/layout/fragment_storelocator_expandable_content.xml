@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/expanded_content_view" android:layout_width="fill_parent" android:layout_height="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/current_store_container" android:background="@color/xlight_gray_background" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+            <Button android:id="@id/button_choose_another" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="@dimen/store_locator_button_height" android:layout_margin="5.0dip" android:text="@string/button_choose_another" android:layout_weight="1.0" style="@style/GreyButton" />
+            <Button android:id="@id/button_place_order" android:layout_width="0.0dip" android:layout_height="@dimen/store_locator_button_height" android:layout_margin="5.0dip" android:text="@string/start_an_order" android:layout_weight="1.0" style="@style/GreyButton" />
+            <Button android:textSize="14.0sp" android:id="@id/button_save_to_favorites" android:layout_width="0.0dip" android:layout_height="@dimen/store_locator_button_height" android:layout_margin="5.0dip" android:text="@string/save_to_favorites" android:layout_weight="1.0" style="@style/RedButton" />
+            <Button android:id="@id/button_remove_from_favorites" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="@dimen/store_locator_button_height" android:layout_margin="5.0dip" android:text="@string/remove_from_favorites" android:layout_weight="1.0" style="@style/GreyButton" />
+        </LinearLayout>
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="italic" android:textColor="@color/medium_gray_1" android:id="@id/label_current_store" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/this_is_now_your_current_restaurant" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/favorites_container" android:background="@color/xlight_gray_background" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/dark_gray_2" android:id="@id/nickname_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/name_prompt" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/dark_gray_2" android:id="@id/nickname_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_weight="1.0" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_arrow_gray" />
+        </LinearLayout>
+        <View android:id="@id/view" android:background="@color/mcd_light_grey_deactivated" android:clickable="false" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="3.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+            <Button android:textColor="@android:color/white" android:id="@id/skip_button" android:padding="2.0dip" android:layout_width="65.0dip" android:layout_height="33.0dip" android:text="@string/sl_skip_button" style="@style/GreyButton" />
+            <Button android:textSize="14.0sp" android:id="@id/button_add_to_favorites" android:padding="2.0dip" android:layout_width="0.0dip" android:layout_height="33.0dip" android:layout_marginLeft="10.0dip" android:text="@string/sl_favorites_button" android:layout_weight="1.0" style="@style/RedButton" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

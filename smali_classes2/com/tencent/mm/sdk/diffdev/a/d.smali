@@ -1,0 +1,456 @@
+.class public final Lcom/tencent/mm/sdk/diffdev/a/d;
+.super Landroid/os/AsyncTask;
+
+# interfaces
+.implements Lcom/newrelic/agent/android/api/v2/TraceFieldInterface;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/tencent/mm/sdk/diffdev/a/d$a;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Landroid/os/AsyncTask",
+        "<",
+        "Ljava/lang/Void;",
+        "Ljava/lang/Void;",
+        "Lcom/tencent/mm/sdk/diffdev/a/d$a;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final ai:Z
+
+.field private static final aj:Ljava/lang/String;
+
+.field private static ak:Ljava/lang/String;
+
+
+# instance fields
+.field public _nr_trace:Lcom/newrelic/agent/android/tracing/Trace;
+
+.field private al:Ljava/lang/String;
+
+.field private am:Ljava/lang/String;
+
+.field private an:Lcom/tencent/mm/sdk/diffdev/OAuthListener;
+
+.field private ao:Lcom/tencent/mm/sdk/diffdev/a/f;
+
+.field private appId:Ljava/lang/String;
+
+.field private scope:Ljava/lang/String;
+
+.field private signature:Ljava/lang/String;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "mounted"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    new-instance v0, Ljava/io/File;
+
+    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Ljava/io/File;->canWrite()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    sput-boolean v0, Lcom/tencent/mm/sdk/diffdev/a/d;->ai:Z
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, "/tencent/MicroMsg/oauth_qrcode.png"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/tencent/mm/sdk/diffdev/a/d;->aj:Ljava/lang/String;
+
+    const/4 v0, 0x0
+
+    sput-object v0, Lcom/tencent/mm/sdk/diffdev/a/d;->ak:Ljava/lang/String;
+
+    const-string v0, "http://open.weixin.qq.com/connect/sdk/qrconnect?appid=%s&noncestr=%s&timestamp=%s&scope=%s&signature=%s"
+
+    sput-object v0, Lcom/tencent/mm/sdk/diffdev/a/d;->ak:Ljava/lang/String;
+
+    return-void
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method static synthetic r()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/tencent/mm/sdk/diffdev/a/d;->ai:Z
+
+    return v0
+.end method
+
+.method static synthetic s()Ljava/lang/String;
+    .locals 1
+
+    sget-object v0, Lcom/tencent/mm/sdk/diffdev/a/d;->aj:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public _nr_setTrace(Lcom/newrelic/agent/android/tracing/Trace;)V
+    .locals 1
+
+    :try_start_0
+    iput-object p1, p0, Lcom/tencent/mm/sdk/diffdev/a/d;->_nr_trace:Lcom/newrelic/agent/android/tracing/Trace;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    :goto_0
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    goto :goto_0
+.end method
+
+.method protected final synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 11
+
+    const/4 v6, 0x2
+
+    const/4 v10, 0x1
+
+    const/4 v7, 0x0
+
+    :try_start_0
+    iget-object v0, p0, Lcom/tencent/mm/sdk/diffdev/a/d;->_nr_trace:Lcom/newrelic/agent/android/tracing/Trace;
+
+    const-string v1, "d#doInBackground"
+
+    const/4 v2, 0x0
+
+    invoke-static {v0, v1, v2}, Lcom/newrelic/agent/android/tracing/TraceMachine;->enterMethod(Lcom/newrelic/agent/android/tracing/Trace;Ljava/lang/String;Ljava/util/ArrayList;)V
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    :goto_0
+    const-string v0, "MicroMsg.SDK.GetQRCodeTask"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "external storage available = "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    sget-boolean v2, Lcom/tencent/mm/sdk/diffdev/a/d;->ai:Z
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    sget-object v0, Lcom/tencent/mm/sdk/diffdev/a/d;->ak:Ljava/lang/String;
+
+    const/4 v1, 0x5
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    iget-object v2, p0, Lcom/tencent/mm/sdk/diffdev/a/d;->appId:Ljava/lang/String;
+
+    aput-object v2, v1, v7
+
+    iget-object v2, p0, Lcom/tencent/mm/sdk/diffdev/a/d;->al:Ljava/lang/String;
+
+    aput-object v2, v1, v10
+
+    iget-object v2, p0, Lcom/tencent/mm/sdk/diffdev/a/d;->am:Ljava/lang/String;
+
+    aput-object v2, v1, v6
+
+    const/4 v2, 0x3
+
+    iget-object v3, p0, Lcom/tencent/mm/sdk/diffdev/a/d;->scope:Ljava/lang/String;
+
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x4
+
+    iget-object v3, p0, Lcom/tencent/mm/sdk/diffdev/a/d;->signature:Ljava/lang/String;
+
+    aput-object v3, v1, v2
+
+    invoke-static {v0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v2
+
+    const/4 v1, -0x1
+
+    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/diffdev/a/e;->b(Ljava/lang/String;I)[B
+
+    move-result-object v1
+
+    const-string v4, "MicroMsg.SDK.GetQRCodeTask"
+
+    const-string v5, "doInBackground, url = %s, time consumed = %d(ms)"
+
+    new-array v6, v6, [Ljava/lang/Object;
+
+    aput-object v0, v6, v7
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v8
+
+    sub-long v2, v8, v2
+
+    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v0
+
+    aput-object v0, v6, v10
+
+    invoke-static {v5, v6}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v4, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-static {v1}, Lcom/tencent/mm/sdk/diffdev/a/d$a;->d([B)Lcom/tencent/mm/sdk/diffdev/a/d$a;
+
+    move-result-object v0
+
+    invoke-static {}, Lcom/newrelic/agent/android/tracing/TraceMachine;->exitMethod()V
+
+    invoke-static {p0}, Lcom/newrelic/agent/android/tracing/TraceMachine;->unloadTraceContext(Ljava/lang/Object;)V
+
+    return-object v0
+
+    :catch_0
+    move-exception v0
+
+    const/4 v0, 0x0
+
+    :try_start_1
+    const-string v1, "d#doInBackground"
+
+    const/4 v2, 0x0
+
+    invoke-static {v0, v1, v2}, Lcom/newrelic/agent/android/tracing/TraceMachine;->enterMethod(Lcom/newrelic/agent/android/tracing/Trace;Ljava/lang/String;Ljava/util/ArrayList;)V
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_0
+
+    goto :goto_0
+.end method
+
+.method protected final synthetic onPostExecute(Ljava/lang/Object;)V
+    .locals 6
+
+    const/4 v5, 0x0
+
+    const/4 v4, 0x0
+
+    :try_start_0
+    iget-object v0, p0, Lcom/tencent/mm/sdk/diffdev/a/d;->_nr_trace:Lcom/newrelic/agent/android/tracing/Trace;
+
+    const-string v1, "d#onPostExecute"
+
+    const/4 v2, 0x0
+
+    invoke-static {v0, v1, v2}, Lcom/newrelic/agent/android/tracing/TraceMachine;->enterMethod(Lcom/newrelic/agent/android/tracing/Trace;Ljava/lang/String;Ljava/util/ArrayList;)V
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    :goto_0
+    check-cast p1, Lcom/tencent/mm/sdk/diffdev/a/d$a;
+
+    iget-object v0, p1, Lcom/tencent/mm/sdk/diffdev/a/d$a;->ap:Lcom/tencent/mm/sdk/diffdev/OAuthErrCode;
+
+    sget-object v1, Lcom/tencent/mm/sdk/diffdev/OAuthErrCode;->WechatAuth_Err_OK:Lcom/tencent/mm/sdk/diffdev/OAuthErrCode;
+
+    if-ne v0, v1, :cond_3
+
+    const-string v0, "MicroMsg.SDK.GetQRCodeTask"
+
+    const-string v1, "onPostExecute, get qrcode success"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v0, p0, Lcom/tencent/mm/sdk/diffdev/a/d;->an:Lcom/tencent/mm/sdk/diffdev/OAuthListener;
+
+    iget-object v1, p1, Lcom/tencent/mm/sdk/diffdev/a/d$a;->as:Ljava/lang/String;
+
+    iget-object v2, p1, Lcom/tencent/mm/sdk/diffdev/a/d$a;->av:[B
+
+    invoke-interface {v0, v1, v2}, Lcom/tencent/mm/sdk/diffdev/OAuthListener;->onAuthGotQrcode(Ljava/lang/String;[B)V
+
+    new-instance v0, Lcom/tencent/mm/sdk/diffdev/a/f;
+
+    iget-object v1, p1, Lcom/tencent/mm/sdk/diffdev/a/d$a;->aq:Ljava/lang/String;
+
+    iget-object v2, p0, Lcom/tencent/mm/sdk/diffdev/a/d;->an:Lcom/tencent/mm/sdk/diffdev/OAuthListener;
+
+    invoke-direct {v0, v1, v2}, Lcom/tencent/mm/sdk/diffdev/a/f;-><init>(Ljava/lang/String;Lcom/tencent/mm/sdk/diffdev/OAuthListener;)V
+
+    iput-object v0, p0, Lcom/tencent/mm/sdk/diffdev/a/d;->ao:Lcom/tencent/mm/sdk/diffdev/a/f;
+
+    iget-object v0, p0, Lcom/tencent/mm/sdk/diffdev/a/d;->ao:Lcom/tencent/mm/sdk/diffdev/a/f;
+
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0xb
+
+    if-lt v1, v2, :cond_1
+
+    sget-object v1, Landroid/os/AsyncTask;->THREAD_POOL_EXECUTOR:Ljava/util/concurrent/Executor;
+
+    new-array v2, v5, [Ljava/lang/Void;
+
+    instance-of v3, v0, Landroid/os/AsyncTask;
+
+    if-nez v3, :cond_0
+
+    invoke-virtual {v0, v1, v2}, Lcom/tencent/mm/sdk/diffdev/a/f;->executeOnExecutor(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/os/AsyncTask;
+
+    :goto_1
+    invoke-static {}, Lcom/newrelic/agent/android/tracing/TraceMachine;->exitMethod()V
+
+    :goto_2
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    const/4 v0, 0x0
+
+    :try_start_1
+    const-string v1, "d#onPostExecute"
+
+    const/4 v2, 0x0
+
+    invoke-static {v0, v1, v2}, Lcom/newrelic/agent/android/tracing/TraceMachine;->enterMethod(Lcom/newrelic/agent/android/tracing/Trace;Ljava/lang/String;Ljava/util/ArrayList;)V
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_0
+
+    goto :goto_0
+
+    :cond_0
+    check-cast v0, Landroid/os/AsyncTask;
+
+    invoke-static {v0, v1, v2}, Lcom/newrelic/agent/android/instrumentation/AsyncTaskInstrumentation;->executeOnExecutor(Landroid/os/AsyncTask;Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/os/AsyncTask;
+
+    goto :goto_1
+
+    :cond_1
+    new-array v1, v5, [Ljava/lang/Void;
+
+    instance-of v2, v0, Landroid/os/AsyncTask;
+
+    if-nez v2, :cond_2
+
+    invoke-virtual {v0, v1}, Lcom/tencent/mm/sdk/diffdev/a/f;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+
+    :goto_3
+    invoke-static {}, Lcom/newrelic/agent/android/tracing/TraceMachine;->exitMethod()V
+
+    goto :goto_2
+
+    :cond_2
+    check-cast v0, Landroid/os/AsyncTask;
+
+    invoke-static {v0, v1}, Lcom/newrelic/agent/android/instrumentation/AsyncTaskInstrumentation;->execute(Landroid/os/AsyncTask;[Ljava/lang/Object;)Landroid/os/AsyncTask;
+
+    goto :goto_3
+
+    :cond_3
+    const-string v0, "MicroMsg.SDK.GetQRCodeTask"
+
+    const-string v1, "onPostExecute, get qrcode fail, OAuthErrCode = %s"
+
+    const/4 v2, 0x1
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    iget-object v3, p1, Lcom/tencent/mm/sdk/diffdev/a/d$a;->ap:Lcom/tencent/mm/sdk/diffdev/OAuthErrCode;
+
+    aput-object v3, v2, v5
+
+    invoke-static {v1, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v0, p0, Lcom/tencent/mm/sdk/diffdev/a/d;->an:Lcom/tencent/mm/sdk/diffdev/OAuthListener;
+
+    iget-object v1, p1, Lcom/tencent/mm/sdk/diffdev/a/d$a;->ap:Lcom/tencent/mm/sdk/diffdev/OAuthErrCode;
+
+    invoke-interface {v0, v1, v4}, Lcom/tencent/mm/sdk/diffdev/OAuthListener;->onAuthFinish(Lcom/tencent/mm/sdk/diffdev/OAuthErrCode;Ljava/lang/String;)V
+
+    invoke-static {}, Lcom/newrelic/agent/android/tracing/TraceMachine;->exitMethod()V
+
+    goto :goto_2
+.end method

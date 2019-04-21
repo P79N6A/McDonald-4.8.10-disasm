@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcdonalds.app.widget.SquareRelativeLayout android:id="@id/grid_item" android:background="@drawable/food_grid_item_bg" android:padding="4.0dip" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:src="@drawable/icon_large_meal" android:scaleType="fitCenter" android:layout_above="@id/name" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@id/item_not_available" android:background="@drawable/item_not_available_bg" android:paddingLeft="4.0dip" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_alignParentTop="true">
+        <TextView android:textSize="10.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/item_not_available_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/outage_temporality_unavailable" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/item_icons_layout" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/offer_icon" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="24.0dip" android:src="@drawable/ic_offer_yellow" android:adjustViewBounds="true" />
+        <ImageView android:id="@id/favorite_icon" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="24.0dip" android:src="@drawable/icon_favorites_red" android:adjustViewBounds="true" />
+    </LinearLayout>
+    <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:gravity="center" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/placeholder_text" android:layout_alignParentBottom="true" />
+</com.mcdonalds.app.widget.SquareRelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/light_gray_1" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mcdonalds.app.widget.EditTextPhone android:id="@id/mobile_number_with_country_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:hint="@string/lite_hint_phone" android:maxLength="10" android:inputType="phone" style="@style/FormInput">
+        <requestFocus />
+    </com.mcdonalds.app.widget.EditTextPhone>
+    <EditText android:id="@id/mobile_number" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:hint="@string/lite_hint_phone" android:maxLength="10" android:inputType="phone" style="@style/FormInput">
+        <requestFocus />
+    </EditText>
+    <LinearLayout android:orientation="vertical" android:id="@id/not_verified_component" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lite_label_acct_not_verif" />
+        <TextView android:textColor="@color/mcd_red" android:gravity="center" android:id="@id/verify_link" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/lite_btn_verif" />
+    </LinearLayout>
+    <Button android:enabled="false" android:id="@id/button_verify_mobile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/lite_btn_save_changes" style="@style/RedButton" />
+</LinearLayout>

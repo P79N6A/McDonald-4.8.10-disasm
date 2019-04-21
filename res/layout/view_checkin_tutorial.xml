@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/view_checkin_tutorial_0" android:background="#cc000000" android:padding="10.0dip" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="24.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_please_check_in_inside_restaurant" />
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/text_look_for_qr_code" />
+    </LinearLayout>
+    <Button android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textColor="@android:color/black" android:id="@id/scan_cancel_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/cancel" style="@style/WhiteButton" />
+    <Button android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textColor="@android:color/white" android:id="@id/scan_continue_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/continue_button" style="@style/RedButton" />
+</LinearLayout>

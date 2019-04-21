@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/date_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="10.0" />
+    <TextView android:textColor="@color/light_gray_2" android:id="@id/purchase_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="3.0" />
+    <TextView android:textColor="@color/mcd_red" android:id="@id/purchase_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:id="@id/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_right_arrow" android:layout_weight="1.0" />
+</LinearLayout>

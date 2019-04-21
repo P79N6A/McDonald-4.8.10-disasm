@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/refresher" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ScrollView android:id="@id/status_scroll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/order_number_container" />
+                <com.mcdonalds.app.ui.DeliveryStatusView android:id="@id/order_cancelled" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:labelText="@string/order_cancelled" custom:iconDrawable="@drawable/ic_note_red" />
+                <com.mcdonalds.app.ui.DeliveryStatusView android:id="@id/order_received" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:labelText="@string/order_received" custom:iconDrawable="@drawable/ic_note_grey" custom:completedIconDrawable="@drawable/ic_note_green" custom:completed="false" />
+                <include layout="@layout/delivery_status_separator" />
+                <com.mcdonalds.app.ui.DeliveryStatusView android:id="@id/order_in_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:labelText="@string/in_progress" custom:iconDrawable="@drawable/ic_spatule_grey" custom:completedIconDrawable="@drawable/ic_spatule_green" custom:completed="false" />
+                <include layout="@layout/delivery_status_separator" />
+                <com.mcdonalds.app.ui.DeliveryStatusView android:id="@id/delivery_in_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:labelText="@string/delivery_in_progress" custom:iconDrawable="@drawable/ic_bike_grey" custom:completedIconDrawable="@drawable/ic_bike_green" custom:completed="false" />
+                <include layout="@layout/delivery_status_separator" />
+                <com.mcdonalds.app.ui.DeliveryStatusView android:id="@id/order_delivered" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:labelText="@string/order_delivered" custom:iconDrawable="@drawable/ic_dumpster_grey" custom:completedIconDrawable="@drawable/ic_dumpster_green" custom:subtitleText="@string/estimated_delivery" custom:completed="false" />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/favorite_name_layout" android:background="@drawable/drop_shadow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:background="@android:color/white" android:padding="13.0dip" android:layout_width="fill_parent" android:layout_height="116.0dip" android:layout_margin="16.0dip" android:layout_marginTop="50.0dip" android:layout_alignParentTop="false" android:layout_centerInParent="true">
+        <TextView android:gravity="center_vertical" android:id="@id/favorite_name_prompt" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginRight="8.0dip" android:text="@string/name" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <EditText android:id="@id/favorite_name_input" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginBottom="8.0dip" android:layout_toRightOf="@id/favorite_name_prompt" android:inputType="none" />
+        <Button android:id="@id/favorite_cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/cancel" android:layout_below="@id/favorite_name_input" android:layout_alignParentLeft="true" style="@style/GreyButton" />
+        <Button android:id="@id/save_to_favorites_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/save_to_favorites" android:layout_toRightOf="@id/favorite_cancel_button" android:layout_below="@id/favorite_name_input" android:layout_alignParentRight="true" style="@style/RedButton" />
+    </RelativeLayout>
+</ScrollView>

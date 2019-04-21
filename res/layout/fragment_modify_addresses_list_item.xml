@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcdonalds.app.widget.CheckableRelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@android:color/white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/delete" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" />
+    <android.support.v7.widget.GridLayout android:id="@id/address_container" android:background="@android:color/white" android:padding="16.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/delete_check_box" custom:rowCount="2" custom:columnCount="3">
+        <CheckBox android:id="@id/delete_check_box" android:background="@drawable/icon_foodmenu_close" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_centerVertical="true" custom:layout_rowSpan="2" />
+        <com.mcdonalds.app.widget.InertCheckBox android:enabled="false" android:id="@id/address_check_box" android:background="@drawable/check_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:button="@null" android:layout_marginEnd="16.0dip" custom:layout_rowSpan="2" />
+        <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="16.0sp" android:id="@id/address_header_textview" android:layout_width="0.0dip" android:layout_height="wrap_content" custom:layout_columnWeight="1.0" custom:layout_gravity="fill_horizontal" />
+        <TextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/address_textview" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="3" android:minLines="1" custom:layout_columnWeight="1.0" custom:layout_gravity="fill_horizontal" />
+    </android.support.v7.widget.GridLayout>
+</com.mcdonalds.app.widget.CheckableRelativeLayout>

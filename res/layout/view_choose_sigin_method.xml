@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/selection_view" android:background="@drawable/bg_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:text="@string/label_select_one" style="@style/FormInputGreyText" />
+    <LinearLayout android:orientation="vertical" android:id="@id/container_options" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/option_1" android:tag="1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:text="@string/text_hint_email_address" style="@style/FormInputGreyText" />
+        <TextView android:id="@id/option_2" android:tag="2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:text="@string/text_hint_phone" style="@style/FormInputGreyText" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/xlight_gray_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/list_view" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@android:color/transparent" android:dividerHeight="8.0dip" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</FrameLayout>

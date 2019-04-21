@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/arch_card_front" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/arch_card_page_margin" android:layout_marginRight="@dimen/arch_card_page_margin" android:src="@drawable/icon_star_outline" android:scaleType="fitCenter" />
+    <FrameLayout android:id="@id/arch_card_back" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center" android:id="@id/arch_card_barcode" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</FrameLayout>

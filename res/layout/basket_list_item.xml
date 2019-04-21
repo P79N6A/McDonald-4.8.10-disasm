@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/topPadding" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <RelativeLayout android:id="@id/divider_container" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <RelativeLayout android:id="@id/error_container" android:background="@color/mcd_dark_grey" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/error_textview" android:paddingRight="50.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:layout_toRightOf="@id/error_imageview" />
+        <ImageView android:id="@id/error_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/icon_alert_white" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/header_container" android:background="@color/light_gray_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="18.0sp" android:gravity="center" android:id="@id/header_textview" android:paddingRight="50.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:layout_toRightOf="@id/header_imageview" />
+        <ImageView android:id="@id/header_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/ic_offer" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/time_restriction_warning" android:background="@android:color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/product_details_item" />
+    <TextView android:textColor="@android:color/white" android:id="@id/unavailable_pod_message" android:background="@color/mcd_dark_grey" android:paddingLeft="16.0dip" android:paddingTop="3.0dip" android:paddingRight="16.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/make_it_a_meal_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="@string/make_it_a_meal" android:drawableLeft="@drawable/ic_mcd_meal_icon_white" android:drawablePadding="-32.0dip" style="@style/DarkGrayButton" />
+    <TextView android:id="@id/spacer_view" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <RelativeLayout android:id="@id/energy_price_container" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="25.0dip">
+        <TextView android:id="@id/energy_total_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="end|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="16.0sp" android:textColor="@color/mcd_red" android:id="@id/price_total_textview" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="4.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/edit_container" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_marginBottom="4.0dip">
+        <Button android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="16.0sp" android:textColor="@color/mcd_red" android:id="@id/button_remove" android:background="@android:color/transparent" android:layout_width="90.0dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:text="@string/remove" android:drawableLeft="@drawable/icon_x_red" />
+        <Button android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textColor="@color/mcd_red" android:id="@id/button_edit" android:background="@android:color/transparent" android:layout_width="70.0dip" android:layout_height="fill_parent" android:layout_marginRight="4.0dip" android:text="@string/edit" android:drawableRight="@drawable/icon_selector_arrow_ltgray" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

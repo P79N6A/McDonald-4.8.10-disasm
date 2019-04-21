@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center" android:id="@id/description_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/light_gray_2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <ListView android:id="@id/listview1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/light_gray_2" android:dividerHeight="4.0px" />
+    <View android:background="@color/light_gray_2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <Button android:textAppearance="?android:textAppearanceLarge" android:id="@id/disable_btn" android:background="@color/light_gray_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="5.0dip" android:text="@string/disable_all" />
+</LinearLayout>

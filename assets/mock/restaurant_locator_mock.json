@@ -1,0 +1,725 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -88.054933,
+                    41.82981100000001
+                ]
+            },
+            "properties": {
+                "EntityID": "8809",
+                "AddressLine": "3S010 ROUTE 53",
+                "PrimaryCity": "GLEN ELLYN",
+                "Subdivision": "IL",
+                "PostalCode": "60137-7337",
+                "CountryRegion": "USA",
+                "StoreType": "FREESTANDING",
+                "PlayLand": "N",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/3209",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/3209/",
+                "PhoneNumber": "(630)469-5995",
+                "NatlStrNumber": "3209",
+                "SiteIdNumber": "120229",
+                "Region": "CHICAGO REGION",
+                "gx_id": "2952"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.907895,
+                    41.783499
+                ]
+            },
+            "properties": {
+                "EntityID": "124545",
+                "AddressLine": "5800 HINSDALE OASIS TRI-STATE 294",
+                "PrimaryCity": "HINSDALE",
+                "Subdivision": "IL",
+                "PostalCode": "60521",
+                "CountryRegion": "USA",
+                "StoreType": "TOLLWAY",
+                "PlayLand": "N",
+                "DriveThru": "Y",
+                "WiFi": "N",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/24759",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/24759/",
+                "PhoneNumber": "(630)230-0331",
+                "NatlStrNumber": "24759",
+                "SiteIdNumber": "122037",
+                "Region": "CHICAGO REGION",
+                "gx_id": "11209"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.947569,
+                    41.847594
+                ]
+            },
+            "properties": {
+                "EntityID": "163233",
+                "AddressLine": "1120 - 22ND STREET",
+                "PrimaryCity": "OAK BROOK",
+                "Subdivision": "IL",
+                "PostalCode": "60523",
+                "CountryRegion": "USA",
+                "StoreType": "FREESTANDING",
+                "PlayLand": "N",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/28636",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/28636/",
+                "PhoneNumber": "(630)368-1173",
+                "NatlStrNumber": "28636",
+                "SiteIdNumber": "122177",
+                "Region": "HOME OFFICE REGION",
+                "gx_id": "14258"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.969657,
+                    41.89035
+                ]
+            },
+            "properties": {
+                "EntityID": "8623",
+                "AddressLine": "350 E SAINT CHARLES RD",
+                "PrimaryCity": "VILLA PARK",
+                "Subdivision": "IL",
+                "PostalCode": "60181-2420",
+                "CountryRegion": "USA",
+                "StoreType": "FREESTANDING",
+                "PlayLand": "Y",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/78",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/78/",
+                "PhoneNumber": "(630)530-0187",
+                "NatlStrNumber": "78",
+                "SiteIdNumber": "120043",
+                "Region": "CHICAGO REGION",
+                "gx_id": "2854"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -88.0255,
+                    41.808676
+                ]
+            },
+            "properties": {
+                "EntityID": "8706",
+                "AddressLine": "1620 OGDEN AVE",
+                "PrimaryCity": "DOWNERS GROVE",
+                "Subdivision": "IL",
+                "PostalCode": "60515",
+                "CountryRegion": "USA",
+                "StoreType": "FREESTANDING",
+                "PlayLand": "N",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/1463",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/1463/",
+                "PhoneNumber": "(630)969-4460",
+                "NatlStrNumber": "1463",
+                "SiteIdNumber": "120126",
+                "Region": "CHICAGO REGION",
+                "gx_id": "2898"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.90244400000002,
+                    41.906697
+                ]
+            },
+            "properties": {
+                "EntityID": "8614",
+                "AddressLine": "1 EAST NORTH AVENUE",
+                "PrimaryCity": "NORTHLAKE",
+                "Subdivision": "IL",
+                "PostalCode": "60164-2517",
+                "CountryRegion": "USA",
+                "StoreType": "FREESTANDING",
+                "PlayLand": "Y",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/53",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/53/",
+                "PhoneNumber": "(708)681-1073",
+                "NatlStrNumber": "53",
+                "SiteIdNumber": "120034",
+                "Region": "CHICAGO REGION",
+                "gx_id": "2849"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.838435,
+                    41.864562
+                ]
+            },
+            "properties": {
+                "EntityID": "191549",
+                "AddressLine": "507 ROOSEVELT ROAD",
+                "PrimaryCity": "MAYWOOD",
+                "Subdivision": "IL",
+                "PostalCode": "60153",
+                "CountryRegion": "USA",
+                "StoreType": "FREESTANDING",
+                "PlayLand": "N",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "",
+                "applicationURL": "",
+                "PhoneNumber": "(000)000-0000",
+                "NatlStrNumber": "35226",
+                "SiteIdNumber": "122454",
+                "Region": "CHICAGO REGION",
+                "gx_id": "14055"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.85392600000002,
+                    41.849678999999995
+                ]
+            },
+            "properties": {
+                "EntityID": "9794",
+                "AddressLine": "6200 BROADVIEW (VILLAGE SQUARE)",
+                "PrimaryCity": "BROADVIEW",
+                "Subdivision": "IL",
+                "PostalCode": "60155",
+                "CountryRegion": "USA",
+                "StoreType": "FREESTANDING",
+                "PlayLand": "Y",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/16136",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/16136/",
+                "PhoneNumber": "(708)338-2523",
+                "NatlStrNumber": "16136",
+                "SiteIdNumber": "121341",
+                "Region": "CHICAGO REGION",
+                "gx_id": "3280"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.926128,
+                    41.818218
+                ]
+            },
+            "properties": {
+                "EntityID": "8834",
+                "AddressLine": "935 N YORK RD",
+                "PrimaryCity": "HINSDALE",
+                "Subdivision": "IL",
+                "PostalCode": "60521-2905",
+                "CountryRegion": "USA",
+                "StoreType": "FREESTANDING",
+                "PlayLand": "N",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/5348",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/5348/",
+                "PhoneNumber": "(630)654-2481",
+                "NatlStrNumber": "5348",
+                "SiteIdNumber": "120254",
+                "Region": "CHICAGO REGION",
+                "gx_id": "2963"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.86813299999999,
+                    41.786487
+                ]
+            },
+            "properties": {
+                "EntityID": "8990",
+                "AddressLine": "5701 SOUTH LAGRANGE ROAD",
+                "PrimaryCity": "COUNTRYSIDE",
+                "Subdivision": "IL",
+                "PostalCode": "60525-4063",
+                "CountryRegion": "USA",
+                "StoreType": "FREESTANDING",
+                "PlayLand": "N",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/4971",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/4971/",
+                "PhoneNumber": "(708)352-8875",
+                "NatlStrNumber": "4971",
+                "SiteIdNumber": "120413",
+                "Region": "CHICAGO REGION",
+                "gx_id": "3051"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.870278,
+                    41.81848699999999
+                ]
+            },
+            "properties": {
+                "EntityID": "10176",
+                "AddressLine": "100 N LAGRANGE RD",
+                "PrimaryCity": "LAGRANGE",
+                "Subdivision": "IL",
+                "PostalCode": "60525",
+                "CountryRegion": "USA",
+                "StoreType": "GAS STATION",
+                "PlayLand": "N",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/19621",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/19621/",
+                "PhoneNumber": "(708)352-1110",
+                "NatlStrNumber": "19621",
+                "SiteIdNumber": "121800",
+                "Region": "CHICAGO REGION",
+                "gx_id": "3367"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.864113,
+                    41.882957
+                ]
+            },
+            "properties": {
+                "EntityID": "10147",
+                "AddressLine": "520 25TH STREET",
+                "PrimaryCity": "BELLWOOD",
+                "Subdivision": "IL",
+                "PostalCode": "60104",
+                "CountryRegion": "USA",
+                "StoreType": "FREESTANDING",
+                "PlayLand": "N",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/18980",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/18980/",
+                "PhoneNumber": "(708)493-2840",
+                "NatlStrNumber": "18980",
+                "SiteIdNumber": "121771",
+                "Region": "CHICAGO REGION",
+                "gx_id": "3362"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.883431,
+                    41.863652
+                ]
+            },
+            "properties": {
+                "EntityID": "9533",
+                "AddressLine": "4012 ROOSEVELT RD",
+                "PrimaryCity": "HILLSIDE",
+                "Subdivision": "IL",
+                "PostalCode": "60162-1824",
+                "CountryRegion": "USA",
+                "StoreType": "FREESTANDING",
+                "PlayLand": "Y",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/11049",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/11049/",
+                "PhoneNumber": "(708)544-2333",
+                "NatlStrNumber": "11049",
+                "SiteIdNumber": "121076",
+                "Region": "CHICAGO REGION",
+                "gx_id": "3189"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.910952,
+                    41.88907700000001
+                ]
+            },
+            "properties": {
+                "EntityID": "8900",
+                "AddressLine": "5707 ST. CHARLES RD.",
+                "PrimaryCity": "BERKELEY",
+                "Subdivision": "IL",
+                "PostalCode": "60163-1113",
+                "CountryRegion": "USA",
+                "StoreType": "FREESTANDING",
+                "PlayLand": "Y",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/4899",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/4899/",
+                "PhoneNumber": "(708)544-9706",
+                "NatlStrNumber": "4899",
+                "SiteIdNumber": "120320",
+                "Region": "CHICAGO REGION",
+                "gx_id": "3003"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.897846,
+                    41.833983
+                ]
+            },
+            "properties": {
+                "EntityID": "9776",
+                "AddressLine": "11110 WEST 31ST STREET",
+                "PrimaryCity": "WESTCHESTER",
+                "Subdivision": "IL",
+                "PostalCode": "60154",
+                "CountryRegion": "USA",
+                "StoreType": "FREESTANDING",
+                "PlayLand": "Y",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/13027",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/13027/",
+                "PhoneNumber": "(708)531-1236",
+                "NatlStrNumber": "13027",
+                "SiteIdNumber": "121323",
+                "Region": "CHICAGO REGION",
+                "gx_id": "3275"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.971915,
+                    41.847469999999994
+                ]
+            },
+            "properties": {
+                "EntityID": "8714",
+                "AddressLine": "2111 MIDWEST RD",
+                "PrimaryCity": "OAK BROOK",
+                "Subdivision": "IL",
+                "PostalCode": "60523",
+                "CountryRegion": "USA",
+                "StoreType": "FREESTANDING",
+                "PlayLand": "N",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/1655",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/1655/",
+                "PhoneNumber": "(630)620-0457",
+                "NatlStrNumber": "1655",
+                "SiteIdNumber": "120134",
+                "Region": "CHICAGO REGION",
+                "gx_id": "2903"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.93498199999999,
+                    41.869212
+                ]
+            },
+            "properties": {
+                "EntityID": "9128",
+                "AddressLine": "190 E BUTTERFIELD RD",
+                "PrimaryCity": "ELMHURST",
+                "Subdivision": "IL",
+                "PostalCode": "60126-5120",
+                "CountryRegion": "USA",
+                "StoreType": "FREESTANDING",
+                "PlayLand": "Y",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/6243",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/6243/",
+                "PhoneNumber": "(630)832-6962",
+                "NatlStrNumber": "6243",
+                "SiteIdNumber": "120551",
+                "Region": "CHICAGO REGION",
+                "gx_id": "3115"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -88.009554,
+                    41.860686
+                ]
+            },
+            "properties": {
+                "EntityID": "8759",
+                "AddressLine": "300 E ROOSEVELT RD",
+                "PrimaryCity": "LOMBARD",
+                "Subdivision": "IL",
+                "PostalCode": "60148-4628",
+                "CountryRegion": "USA",
+                "StoreType": "FREESTANDING",
+                "PlayLand": "N",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/2106",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/2106/",
+                "PhoneNumber": "(630)620-4280",
+                "NatlStrNumber": "2106",
+                "SiteIdNumber": "120179",
+                "Region": "CHICAGO REGION",
+                "gx_id": "2919"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -88.01088399999999,
+                    41.842105
+                ]
+            },
+            "properties": {
+                "EntityID": "185984",
+                "AddressLine": "ONE YORKTOWN SHOPPING CENTER",
+                "PrimaryCity": "LOMBARD",
+                "Subdivision": "IL",
+                "PostalCode": "60148",
+                "CountryRegion": "USA",
+                "StoreType": "FREESTANDING",
+                "PlayLand": "N",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/33932",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/33932/",
+                "PhoneNumber": "(630)495-2960",
+                "NatlStrNumber": "33932",
+                "SiteIdNumber": "122399",
+                "Region": "CHICAGO REGION",
+                "gx_id": "13796"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.992009,
+                    41.809285
+                ]
+            },
+            "properties": {
+                "EntityID": "8600",
+                "AddressLine": "225 E OGDEN AVE",
+                "PrimaryCity": "DOWNERS GROVE",
+                "Subdivision": "IL",
+                "PostalCode": "60515-3144",
+                "CountryRegion": "USA",
+                "StoreType": "FREESTANDING",
+                "PlayLand": "Y",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/55",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/55/",
+                "PhoneNumber": "(630)969-6310",
+                "NatlStrNumber": "55",
+                "SiteIdNumber": "120020",
+                "Region": "CHICAGO REGION",
+                "gx_id": "2838"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.972777,
+                    41.773406
+                ]
+            },
+            "properties": {
+                "EntityID": "9147",
+                "AddressLine": "31 E 63RD ST",
+                "PrimaryCity": "WESTMONT",
+                "Subdivision": "IL",
+                "PostalCode": "60559-2601",
+                "CountryRegion": "USA",
+                "StoreType": "FREESTANDING",
+                "PlayLand": "Y",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/6606",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/6606/",
+                "PhoneNumber": "(630)968-3868",
+                "NatlStrNumber": "6606",
+                "SiteIdNumber": "120570",
+                "Region": "CHICAGO REGION",
+                "gx_id": "3124"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -88.031654,
+                    41.9049
+                ]
+            },
+            "properties": {
+                "EntityID": "9817",
+                "AddressLine": "540 W NORTH AVE",
+                "PrimaryCity": "LOMBARD",
+                "Subdivision": "IL",
+                "PostalCode": "60148",
+                "CountryRegion": "USA",
+                "StoreType": "GAS STATION",
+                "PlayLand": "N",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/12637",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/12637/",
+                "PhoneNumber": "(630)792-8009",
+                "NatlStrNumber": "12637",
+                "SiteIdNumber": "121364",
+                "Region": "CHICAGO REGION",
+                "gx_id": "3288"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.99823599999999,
+                    41.906028
+                ]
+            },
+            "properties": {
+                "EntityID": "8807",
+                "AddressLine": "410 W NORTH AVE",
+                "PrimaryCity": "ADDISON",
+                "Subdivision": "IL",
+                "PostalCode": "60101-4912",
+                "CountryRegion": "USA",
+                "StoreType": "FREESTANDING",
+                "PlayLand": "N",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/2966",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/2966/",
+                "PhoneNumber": "(630)495-5483",
+                "NatlStrNumber": "2966",
+                "SiteIdNumber": "120227",
+                "Region": "CHICAGO REGION",
+                "gx_id": "2950"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.940201,
+                    41.927692
+                ]
+            },
+            "properties": {
+                "EntityID": "8711",
+                "AddressLine": "920 N YORK RD",
+                "PrimaryCity": "ELMHURST",
+                "Subdivision": "IL",
+                "PostalCode": "60126-5115",
+                "CountryRegion": "USA",
+                "StoreType": "FREESTANDING",
+                "PlayLand": "Y",
+                "DriveThru": "Y",
+                "WiFi": "Y",
+                "GiftCards": "Y",
+                "storeURL": "http://www.mcillinois.com/1460",
+                "applicationURL": "http://www.mcillinois.com/careers/apply-online/1460/",
+                "PhoneNumber": "(630)832-9633",
+                "NatlStrNumber": "1460",
+                "SiteIdNumber": "120131",
+                "Region": "CHICAGO REGION",
+                "gx_id": "2901"
+            }
+        }
+    ]
+}

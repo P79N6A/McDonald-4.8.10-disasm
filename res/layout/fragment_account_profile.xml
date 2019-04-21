@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/light_gray_1" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="48.0dip">
+        <TextView android:id="@id/user_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" style="@style/AccountSettingsCell" />
+        <TextView android:id="@id/account_gender" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" style="@style/AccountSettingsCell" />
+        <TextView android:id="@id/account_birthdate" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" style="@style/AccountSettingsCell" />
+        <TextView android:id="@id/email" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" style="@style/AccountSettingsCell" />
+        <TextView android:id="@id/mobile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" style="@style/AccountSettingsCell" />
+        <TextView android:id="@id/change_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:text="@string/account_change_password" style="@style/AccountSettingsCell" />
+        <TextView android:id="@id/signin_prefs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:text="@string/account_sign_in_prefs" style="@style/AccountSettingsCell" />
+        <TextView android:id="@id/addresses" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/account_addresses" style="@style/AccountSettingsCell" />
+        <TextView android:id="@id/saved_cards" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:text="@string/account_payment_methods" style="@style/AccountSettingsCell" />
+        <TextView android:id="@id/zip_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/account_zip_code" style="@style/AccountSettingsCell" />
+        <TextView android:id="@id/offer_pref" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:text="@string/account_offer_preferences" style="@style/AccountSettingsCell" />
+        <TextView android:id="@id/comm_pref" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:text="@string/account_communications" style="@style/AccountSettingsCell" />
+        <TextView android:id="@id/delete_acct" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/account_delete_account" style="@style/AccountSettingsCell" />
+        <Button android:textColor="@android:color/white" android:id="@id/sign_out_btn" android:background="@drawable/button_dark_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/appmenu_sign_out" />
+    </LinearLayout>
+</ScrollView>

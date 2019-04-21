@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/pickup_location" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/pickup_location" />
+        <FrameLayout android:id="@id/map_container" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_marginTop="8.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/skip_the_line_button" android:background="@android:color/white" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="48.0sp" android:textColor="@color/mcd_black" android:gravity="center" android:id="@id/order_number_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="14.0sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/drive_thru_order_number_head" />
+            <TextView android:textSize="14.0sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:layout_marginRight="48.0dip" android:text="@string/drive_thru_order_number_tell_us" />
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_drive_thru" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_car" />
+            </LinearLayout>
+            <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="14.0sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip" android:text="@string/drive_thru_order_number_payment" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:layout_gravity="bottom" android:id="@id/done_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:text="@string/drive_thru_order_number_done_button" style="@style/RedButton" />
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:text="@string/label_update_mobile" />
+    <EditText android:id="@id/mobile_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/text_hint_phone" android:maxLength="11" android:inputType="phone" style="@style/FormInput" />
+    <Button android:enabled="false" android:id="@id/button_verify_mobile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/label_button_verify_mobile" style="@style/RedButton" />
+</LinearLayout>

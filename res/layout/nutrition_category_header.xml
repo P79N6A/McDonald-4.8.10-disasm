@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/food_menu_top" android:layout_width="fill_parent" android:layout_height="290.0dip" android:layout_alignParentTop="true" />
+    <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="24.0sp" android:textColor="@color/mcd_red" android:id="@id/header_1" android:visibility="gone" android:layout_width="225.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:text="@string/nutrition_category_header_1" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginStart="16.0dip" android:layout_alignParentStart="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/dark_gray_1" android:visibility="gone" android:layout_width="225.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/nutrition_category_header_2" android:layout_below="@id/header_1" android:layout_alignParentLeft="true" android:layout_marginStart="16.0dip" android:layout_alignParentStart="true" />
+</RelativeLayout>

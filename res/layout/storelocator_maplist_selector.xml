@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/displayTypeSelector" android:background="@drawable/storelocator_maplist_bg" android:layout_width="193.0dip" android:layout_height="fill_parent" android:layout_marginLeft="56.0dip" android:baselineAligned="false">
+        <RadioButton android:id="@id/displayTypeList" android:background="@drawable/storelocator_maplist_left_button_bg" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/list_radio_btn" style="@style/storelocator_filter_style" />
+        <View android:background="@color/light_gray_2" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <RadioButton android:id="@id/displayTypeMap" android:background="@drawable/storelocator_maplist_right_button_bg" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/map_radio_btn" style="@style/storelocator_filter_style" />
+    </RadioGroup>
+    <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#c0000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/msa_alarm" android:layout_above="@id/msa_alarm_greeting" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="26.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/msa_alarm_greeting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/msa_alarm_time_display" android:layout_centerHorizontal="true" />
+    <include android:id="@id/msa_alarm_time_display" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_above="@id/msa_alarm_snooze" android:layout_centerHorizontal="true" layout="@layout/msa_time_layout" />
+    <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/msa_alarm_snooze" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tap_to_snooze" android:layout_centerInParent="true" />
+    <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/msa_alarm_dismiss" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="60.0dip" android:text="@string/slide_to_dismiss" android:layout_below="@id/msa_alarm_snooze" android:layout_centerHorizontal="true" />
+    <Switch android:id="@id/msa_alarm_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:textOn="" android:textOff="" android:thumb="@drawable/msa_alarm_thumb" android:layout_below="@id/msa_alarm_snooze" android:layout_centerHorizontal="true" android:track="@drawable/msa_rounded_rect_white_border" android:switchMinWidth="180.0dip" />
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:id="@id/social_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/social_login" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/social_login" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:id="@id/signin_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/text_signin_title" />
+        </LinearLayout>
+        <EditText android:gravity="center" android:id="@id/email" android:background="@android:color/white" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:hint="@string/lite_hint_email" android:maxLength="255" android:inputType="textEmailAddress">
+            <requestFocus />
+        </EditText>
+        <EditText android:gravity="center" android:id="@id/password" android:background="@android:color/white" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:hint="@string/lite_hint_pswd" android:password="true" android:inputType="textNoSuggestions|textPassword" />
+        <TextView android:textColor="@color/mcd_red" android:gravity="center" android:id="@id/forgot_password_link" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/lite_btn_forgot_pswd" />
+        <Button android:enabled="false" android:textColor="@android:color/white" android:id="@id/button_submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/lite_btn_sign_in" style="@style/RedButton" />
+        <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/lite_label_need_acct" />
+        <TextView android:textColor="@color/mcd_red" android:gravity="center" android:id="@id/sign_up" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/lite_btn_reg" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" layout="@layout/fragment_lite_component_customer_support" />
+    </LinearLayout>
+</ScrollView>

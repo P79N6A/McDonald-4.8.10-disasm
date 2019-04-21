@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/delivery_list_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="5.0dip" android:divider="@android:color/transparent" android:dividerHeight="10.0dip" android:layout_alignParentTop="true" />
+    <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="10.0dip" android:text="@string/delivery_label_estimated_arrival" android:layout_below="@id/delivery_list_view" android:layout_alignParentLeft="true" android:layout_alignParentBottom="false" android:layout_alignParentStart="true" />
+    <TextView android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:text="@string/button_enter_address" android:layout_below="@id/delivery_list_view" android:layout_alignParentRight="true" android:layout_alignParentBottom="false" android:layout_alignParentEnd="false" />
+</RelativeLayout>

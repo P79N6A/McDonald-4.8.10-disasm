@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="24.0sp" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/appmenu_favorites" />
+    <android.support.v4.view.ViewPager android:id="@id/order_pager" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="430.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.mcdonalds.app.widget.PagerIndicator android:orientation="horizontal" android:id="@id/pager_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="8.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="start" android:id="@id/see_all_recents" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/see_all" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</LinearLayout>

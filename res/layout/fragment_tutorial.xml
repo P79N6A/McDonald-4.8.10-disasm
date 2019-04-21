@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/main_view_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.mcdonalds.app.widget.PagerIndicator android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/pager_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="24.0dip" />
+    <LinearLayout android:id="@id/button_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/button_sign_in" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/button_title_sign_in" android:layout_weight="1.0" style="@style/DarkGrayButton" />
+        <Button android:id="@id/button_get_started" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/button_title_get_started" android:layout_weight="1.0" style="@style/RedButton" />
+    </LinearLayout>
+    <Button android:id="@id/button_next" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/tutorial_next_button" style="@style/DarkGrayButton" />
+</LinearLayout>

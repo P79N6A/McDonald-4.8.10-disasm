@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:gravity="center|left" android:id="@id/arch_card_name_input" android:background="@drawable/gray_border_white_background" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:hint="@string/name_arch_card_hint" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/card_pager_container" android:layout_width="fill_parent" android:layout_height="220.0dip" android:layout_marginBottom="8.0dip" android:layout_below="@id/arch_card_name_input">
+        <com.mcdonalds.app.widget.ScrollToggleViewPager android:id="@id/arch_card_view_pager" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginTop="16.0dip" android:layout_above="@id/pager_indicator" android:layout_centerInParent="true" />
+        <RadioGroup android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/pager_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <FrameLayout android:background="@color/xlight_gray_background" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/card_pager_container" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/purchase_container" android:background="@drawable/arch_card_purchase_bg" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+            <TextView android:textSize="14.0sp" android:id="@id/arch_card_balance_prompt" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pucharse_arch_card_prompt" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/arch_card_balance_prompt" layout="@layout/arch_card_amount_selector" />
+            <RelativeLayout android:id="@id/pay_with_container" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_below="@id/amount_button_container">
+                <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_pay_with" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/right_arrow" android:layout_width="wrap_content" android:layout_height="26.0dip" android:src="@drawable/icon_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="14.0sp" android:textColor="@color/light_gray_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Choose Payment" android:layout_toLeftOf="@id/right_arrow" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <Button android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/purchase" android:layout_below="@id/pay_with_container" style="@style/RedButton" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center|top" android:layout_width="14.0dip" android:layout_height="15.0dip" android:src="@drawable/triangle" />
+    </FrameLayout>
+</RelativeLayout>

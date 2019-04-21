@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="32.0sp" android:gravity="center" android:id="@id/sms_verification_welcome_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/sms_verification_welcome_name_text" />
+    <TextView android:textSize="16.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:text="@string/lite_label_sms_sent" />
+    <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/sms_verification_phone_number" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <EditText android:gravity="center" android:id="@id/sms_verification_enter_phone_number_field" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:hint="@string/sms_verification_enter_code_text" android:maxLength="4" android:inputType="number" style="@style/FormInput">
+        <requestFocus />
+    </EditText>
+    <Button android:enabled="false" android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/sms_verification_enter_code_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/sms_verification_submit_text" style="@style/RedButton" />
+    <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/sms_verification_resend_instructions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:layout_marginTop="24.0dip" android:text="@string/lite_label_sms_resend" />
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/holo_red_dark" android:gravity="center" android:id="@id/sms_verification_resend_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lite_btn_sms_resend" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" layout="@layout/fragment_lite_component_customer_support" />
+</LinearLayout>

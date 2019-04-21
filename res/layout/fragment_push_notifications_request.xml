@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="24.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/one_last_thing" android:background="@color/light_gray_1" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/push_notifications_opt_title" />
+    <TextView android:textSize="15.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/one_last_thing_msg" android:background="@color/light_gray_1" android:paddingLeft="36.0dip" android:paddingRight="36.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/push_notifications_opt_msg" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+        <RelativeLayout android:orientation="vertical" android:id="@id/container_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/pager_layout" android:layout_width="wrap_content" android:layout_height="240.0dip" android:layout_alignParentTop="true">
+                <android.support.v4.view.ViewPager android:id="@id/sample_offer_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+                <include layout="@layout/pager_indicator_group" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <Button android:id="@id/yes_button" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="4.0dip" android:text="@string/push_notification_and_offers_confirm_text" style="@style/RedButton" />
+                <Button android:id="@id/no_button" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="4.0dip" android:text="@string/push_notification_deny_text" style="@style/LightGrayButton" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

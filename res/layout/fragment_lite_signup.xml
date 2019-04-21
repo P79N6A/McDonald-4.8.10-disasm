@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/light_gray_1" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="10.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/social_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:layout_gravity="center_horizontal" android:id="@id/social_login" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/social_login" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/text_signup_title" />
+        </LinearLayout>
+        <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="6.0dip" android:text="@string/lite_label_acct_info" />
+        <EditText android:id="@id/signup_firstname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/lite_hint_first_name" android:maxLength="34" android:inputType="textPersonName" style="@style/FormInput">
+            <requestFocus />
+        </EditText>
+        <EditText android:id="@id/signup_lastname" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/lite_hint_last_name" android:maxLength="34" android:inputType="textPersonName" style="@style/FormInput" />
+        <Spinner android:id="@id/signup_gender" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/FormInput" />
+        <Button android:textSize="16.0sp" android:id="@id/signup_birthdate" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/lite_hint_birthdate" android:textAllCaps="false" style="@style/FormInput" />
+        <EditText android:id="@id/signup_zipcode" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/lite_hint_zip" android:maxLength="5" android:inputType="number" style="@style/FormInput" />
+        <com.mcdonalds.app.widget.EditTextPhone android:id="@id/signup_phone_with_country_code" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/lite_hint_phone" android:inputType="phone" style="@style/FormInput" />
+        <EditText android:id="@id/signup_phone" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/lite_hint_phone" android:inputType="phone" style="@style/FormInput" />
+        <TextView android:id="@id/mobile_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SemanticError" />
+        <EditText android:id="@id/signup_user" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/text_hint_user_name" android:inputType="textEmailAddress" style="@style/FormInput" />
+        <LinearLayout android:orientation="vertical" android:id="@id/container_choose_method" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="6.0dip" android:text="@string/text_sigin_with" />
+            <com.mcdonalds.app.customer.ChooseMethodView android:id="@id/choose_method" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+        </LinearLayout>
+        <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="6.0dip" android:text="@string/lite_label_acct_creds" />
+        <EditText android:id="@id/signup_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/lite_hint_email" android:inputType="textEmailAddress" style="@style/FormInput" />
+        <EditText android:id="@id/signup_email_confirm" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/lite_hint_email_conf" android:inputType="textEmailAddress" style="@style/FormInput" />
+        <TextView android:id="@id/email_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SemanticError" />
+        <LinearLayout android:orientation="vertical" android:id="@id/already_registered_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/error_account_already_exists" style="@style/SemanticError" />
+            <TextView android:id="@id/btn_reset_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/label_cant_sign_in" style="@style/SemanticError" />
+        </LinearLayout>
+        <EditText android:id="@id/signup_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:hint="@string/lite_hint_pswd" android:inputType="textNoSuggestions|textPassword" style="@style/FormInput" />
+        <EditText android:id="@id/signup_confirm_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/lite_hint_pswd_conf" android:inputType="textNoSuggestions|textPassword" android:imeOptions="actionDone" style="@style/FormInput" />
+        <TextView android:id="@id/passwords_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SemanticError" />
+        <TextView android:gravity="center" android:id="@id/password_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="2.0dip" android:text="@string/lite_label_pswd_reqs_android" />
+        <LinearLayout android:orientation="vertical" android:id="@id/terms_and_condition" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/terms_and_conditions_toggle" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/FormInput">
+                <CheckBox android:layout_gravity="center" android:id="@id/terms_and_conditions_checkbox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.15" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.85">
+                    <TextView android:gravity="center_vertical" android:id="@id/policy_updates_agree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lite_label_policy_agree" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:textColor="@android:color/white" android:id="@id/signup_button_finish" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="8.0dip" android:text="@string/continue_button" style="@style/RedButton" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:layout_width="fill_parent" android:layout_height="32.0dip" android:text="@string/lite_label_have_acct" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/mcd_red" android:gravity="center" android:id="@id/has_account" android:layout_width="fill_parent" android:layout_height="42.0dip" android:text="@string/lite_btn_sign_in" />
+        <include layout="@layout/fragment_lite_component_customer_support" />
+    </LinearLayout>
+</ScrollView>

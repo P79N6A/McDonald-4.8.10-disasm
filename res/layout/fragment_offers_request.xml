@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="24.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/one_last_thing" android:background="@color/light_gray_1" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/offers_opt_title" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="17.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/one_last_thing_msg" android:background="@color/light_gray_1" android:paddingLeft="36.0dip" android:paddingRight="36.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/offers_opt_msg" android:layout_below="@id/one_last_thing" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/banner" android:background="@color/light_gray_2" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_below="@id/one_last_thing_msg">
+            <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/icon_flag_med_white" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/dark_gray_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sample_offers" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/pager_layout" android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_below="@id/banner">
+            <android.support.v4.view.ViewPager android:id="@id/sample_offer_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+            <include layout="@layout/pager_indicator_group" />
+        </RelativeLayout>
+        <Button android:id="@id/yes_button" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="4.0dip" android:text="@string/offers_registration_button_text" android:layout_below="@id/pager_layout" style="@style/RedButton" />
+        <Button android:id="@id/no_button" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="4.0dip" android:text="@string/offers_deny_text" android:layout_below="@id/yes_button" style="@style/LightGrayButton" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton android:id="@id/amount_button_other" android:text="@string/offer_section_other" style="@style/RecurringReloadSelection"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

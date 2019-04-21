@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="#ff555555" android:id="@id/txtAddrName" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="12.0dip" android:textColor="#ffbbbbbb" android:id="@id/txtAddrDetails" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtAreaC" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtAreaE" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtDistrictC" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtDistrictE" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtStreetC" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtStreetE" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtStreetLon" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtStreetFromNo" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtStreetFromCode" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtStreetToNo" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtStreetToCode" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtEstateC" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtEstateE" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtBldgC" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtBldgE" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtBlockC" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtBlockE" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtHub1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtHub2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtHub3" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtHub4" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtAddrC" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtAddrE" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtSource" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtUBI" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtLot" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

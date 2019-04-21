@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/activity_checkout" android:tag="layout/activity_checkout_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:filterTouchesWhenObscured="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/container_totals" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="1.0" android:layout_weight="1.0">
+            <FrameLayout android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/pickup_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" layout="@layout/pickup_location" />
+            </FrameLayout>
+            <FrameLayout android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/delivery_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" layout="@layout/delivery_location" />
+            </FrameLayout>
+            <ListView android:id="@id/basket_list" android:padding="8.0dip" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/delivery_row" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="20.0dip">
+                <TextView android:gravity="center|left" android:id="@id/delivery_fee" android:paddingLeft="30.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/totalize_order_delivery_label" android:layout_weight="2.0" />
+                <TextView android:gravity="center" android:id="@id/delivery_fee_value" android:tag="binding_5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/subtotal_container" android:tag="binding_6" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:gravity="center|left" android:id="@id/order_total" android:paddingLeft="30.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/price_subtotal_label" android:layout_weight="2.0" />
+                <TextView android:gravity="center" android:id="@id/order_total_value" android:tag="binding_7" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/bag_charge_container" android:tag="binding_8" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:gravity="center|left" android:id="@id/bag_charge" android:paddingLeft="30.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/bag_charge_label" android:layout_weight="2.0" />
+                <TextView android:gravity="center" android:id="@id/bag_charge_value" android:tag="binding_9" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/discount_container" android:tag="binding_10" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:gravity="center|left" android:id="@id/discount" android:paddingLeft="30.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/totalize_discount_label" android:layout_weight="2.0" />
+                <TextView android:gravity="center" android:id="@id/discount_value" android:tag="binding_11" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/tax_container" android:tag="binding_12" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:gravity="center|left" android:id="@id/tax" android:paddingLeft="30.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/totalize_tax_label" android:layout_weight="2.0" />
+                <TextView android:gravity="center" android:id="@id/tax_value" android:tag="binding_13" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/total_container" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:gravity="center|left" android:id="@id/total" android:paddingLeft="30.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/totalize_total_label" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/medium_gray_1" android:gravity="center" android:id="@id/total_energy" android:tag="binding_14" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:gravity="center" android:id="@id/total_value" android:tag="binding_15" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/payment_container" android:tag="binding_16" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:weightSum="5.0">
+                <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="16.0sp" android:textColor="@color/dark_gray_2" android:layout_gravity="center_vertical" android:id="@id/pay_with_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/pay_with_label" android:layout_weight="2.0" />
+                <LinearLayout android:gravity="right" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2.0">
+                    <ImageView android:id="@id/iv_ali_img" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/icon_alipay_hk_img" />
+                    <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="16.0sp" android:textColor="@color/medium_gray_1" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/choose_payment_label" android:tag="binding_17" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_selector_arrow_ltgray" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:gravity="center" android:id="@id/no_payment_required_label" android:tag="binding_18" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/checkout_no_payment_required" />
+            <FrameLayout android:tag="binding_19" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include android:id="@id/remark_container" layout="@layout/order_remark" />
+            </FrameLayout>
+            <FrameLayout android:tag="binding_20" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include android:id="@id/invoice_container" layout="@layout/invoice" />
+            </FrameLayout>
+            <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="16.0sp" android:textColor="@color/dark_gray_2" android:gravity="center" android:id="@id/unavailable_pods" android:tag="binding_21" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="15.0dip" />
+        </LinearLayout>
+        <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:textSize="16.0sp" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/time_restriction_warning" android:tag="binding_22" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="88.0dip" />
+        <Button android:layout_gravity="bottom|center" android:id="@id/continue_button" android:tag="binding_23" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:drawableRight="@drawable/selector_arrow_gray" style="@style/RedButton" />
+    </LinearLayout>
+    <FrameLayout android:tag="binding_24" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <include android:id="@id/qr_scan_ftu_view" layout="@layout/view_checkin_tutorial" />
+    </FrameLayout>
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progress" android:tag="binding_25" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="90.0dip" android:indeterminate="true" />
+</FrameLayout>

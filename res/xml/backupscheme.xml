@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <exclude domain="database" path="internalVMobDB" />
+    <exclude domain="sharedpref" path="com.google.android.gms.measurement.prefs.xml" />
+    <exclude domain="sharedpref" path="VMOB_PREFERENCES.xml" />
+    <exclude domain="sharedpref" path="NATIVE_GEOFENCE.xml" />
+    <exclude domain="sharedpref" path="REPORTED_BEACONS.xml" />
+</full-backup-content>

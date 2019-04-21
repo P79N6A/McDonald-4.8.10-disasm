@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mcdonalds.app.widget.PagerIndicatorGroup android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/pager_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <RadioButton android:id="@id/page_indicator_0" style="@style/PagerIndicatorCircle" />
+        <RadioButton android:id="@id/page_indicator_1" style="@style/PagerIndicatorCircle" />
+        <RadioButton android:id="@id/page_indicator_2" style="@style/PagerIndicatorCircle" />
+        <RadioButton android:id="@id/page_indicator_3" style="@style/PagerIndicatorCircle" />
+        <RadioButton android:id="@id/page_indicator_4" style="@style/PagerIndicatorCircle" />
+        <RadioButton android:id="@id/page_indicator_5" style="@style/PagerIndicatorCircle" />
+        <RadioButton android:id="@id/page_indicator_6" style="@style/PagerIndicatorCircle" />
+        <RadioButton android:id="@id/page_indicator_7" style="@style/PagerIndicatorCircle" />
+        <RadioButton android:id="@id/page_indicator_8" style="@style/PagerIndicatorCircle" />
+        <RadioButton android:id="@id/page_indicator_9" style="@style/PagerIndicatorCircle" />
+    </com.mcdonalds.app.widget.PagerIndicatorGroup>
+</merge>

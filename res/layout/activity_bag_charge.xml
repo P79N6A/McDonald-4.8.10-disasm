@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/activity_bag_charge" android:tag="layout/activity_bag_charge_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:filterTouchesWhenObscured="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="48.0dip" android:layout_marginRight="32.0dip" android:layout_marginBottom="48.0dip" android:text="@string/bag_charge_header" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" />
+    <include android:id="@id/product_details" layout="@layout/bound_product_details_item" />
+    <include android:id="@id/quantity_controls" layout="@layout/product_quantity_controls" />
+    <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <Button android:id="@id/dismiss_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/bag_charges_no_thanks" style="@style/LightGrayButton" />
+    <Button android:id="@id/continue_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/bag_charge_continue" style="@style/RedButtonLarge" />
+</LinearLayout>

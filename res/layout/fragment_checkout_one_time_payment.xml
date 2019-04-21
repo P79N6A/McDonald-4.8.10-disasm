@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingTop="10.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="1.0" android:layout_weight="1.0">
+            <com.mcdonalds.app.ordering.preparepayment.PickupLocationView android:id="@id/pickup_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+            <com.mcdonalds.app.ordering.preparepayment.DeliveryLocationView android:id="@id/delivery_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+            <ListView android:id="@id/basket_list" android:padding="8.0dip" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/order_subtotal_container" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="2.0dip" android:weightSum="3.0">
+                <TextView android:gravity="center|left" android:id="@id/order_subtotal" android:paddingLeft="30.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/price_subtotal_label" android:layout_weight="2.0" />
+                <TextView android:gravity="center" android:id="@id/order_subtotal_value" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/delivery_row" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="2.0dip" android:weightSum="3.0">
+                <TextView android:gravity="center|left" android:id="@id/delivery_fee" android:paddingLeft="30.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/totalize_order_delivery_label" android:layout_weight="2.0" />
+                <TextView android:gravity="center" android:id="@id/delivery_fee_value" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/order_total_container" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="2.0dip" android:weightSum="3.0">
+                <TextView android:gravity="center|left" android:id="@id/order_total" android:paddingLeft="30.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/totalize_order_total_label" android:layout_weight="2.0" />
+                <TextView android:gravity="center" android:id="@id/order_total_value" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/discount_container" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="2.0dip" android:weightSum="3.0">
+                <TextView android:gravity="center|left" android:id="@id/discount" android:paddingLeft="30.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/totalize_discount_label" android:layout_weight="2.0" />
+                <TextView android:gravity="center" android:id="@id/discount_value" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_tax" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="2.0dip" android:weightSum="3.0">
+                <TextView android:gravity="center|left" android:id="@id/tax" android:paddingLeft="30.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/totalize_tax_label" android:layout_weight="2.0" />
+                <TextView android:gravity="center" android:id="@id/tax_value" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="2.0dip" android:weightSum="3.0">
+                <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:gravity="center|left" android:id="@id/total" android:paddingLeft="30.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/totalize_total_label" android:layout_weight="2.0" />
+                <TextView android:textAppearance="@style/AppTheme.TextAppearance.Bold" android:gravity="center" android:id="@id/total_value" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="" android:layout_weight="1.0" />
+            </LinearLayout>
+            <include android:id="@id/order_remark_container" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/order_remark" />
+            <include android:id="@id/invoice_container" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/invoice" />
+        </LinearLayout>
+        <Button android:id="@id/continue_button" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:text="@string/checkin_tutorial_continue_button" style="@style/RedButtonLarge" />
+    </LinearLayout>
+    <include android:id="@id/qr_scan_ftu_view" android:visibility="gone" layout="@layout/view_checkin_tutorial" />
+</FrameLayout>
