@@ -5049,7 +5049,7 @@
     if-nez v0, :cond_2
 
     .line 110
-    invoke-direct {p0}, Lcom/mcdonalds/app/ordering/payment/PaymentPresenter;->scanQRCode()V
+    invoke-direct {p0}, Lcom/mcdonalds/app/ordering/payment/PaymentPresenter;->finishCheckin()V
 
     goto :goto_0
 
